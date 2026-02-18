@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Factions of the Void — Custom Expansion</title>
+<title>Deep Reaches</title>
 <style>
     @font-face {
       font-family: 'HandelGothic';
@@ -686,15 +686,15 @@
 
 <div class="site-wrapper">
   <header>
-    <p class="header-ornament">✦ Custom Expansion ✦</p>
-    <h1>Factions of the Void</h1>
-    <p class="subtitle">Six Powers Reach for Mecatol Rex</p>
+    <p class="header-ornament">✦ Fan Expansion ✦</p>
+    <h1>Deep Reaches</h1>
+    <p class="subtitle">A fan expansion for Twilight Imperium 4th Edition</p>
     <div class="header-divider"><div class="diamond"></div></div>
   </header>
 
   <!-- FACTION NAV -->
   <nav class="faction-nav">
-    <button class="faction-tab active" onclick="showFaction('netrunners', this)">Kha'Zyrr Net-Runners</button>
+    <button class="faction-tab active" onclick="showFaction('netrunners', this)">The Kha'Zyrr Net-Runners</button>
     <button class="faction-tab" onclick="showFaction('irontide', this)">The Iron Tide</button>
     <button class="faction-tab" onclick="showFaction('dreaming', this)">The Dreaming Throne</button>
     <button class="faction-tab" onclick="showFaction('crystellum', this)">The Crystellum</button>
@@ -712,12 +712,11 @@
         <div class="faction-hero-inner">
           <p class="faction-quote">"Initiate...Protocol Name...Surefire. 'I'm in.' — Emin Za-n"</p>
           <h2 class="faction-name">The Kha'Zyrr Net-Runners</h2>
-          <p class="faction-tagline">The Unseen Hand — System: Kha'Zyrr</p>
           <div class="faction-stats">
-            <div class="stat-item"><span class="stat-label">Commodity</span><span class="stat-value">3</span></div>
-            <div class="stat-item"><span class="stat-label">Home World</span><span class="stat-value">Kha (3/2)</span></div>
+            <div class="stat-item"><span class="stat-label">Commodities</span><span class="stat-value">3</span></div>
+            <div class="stat-item"><span class="stat-label">Home System</span><span class="stat-value">Kha (3/2)</span></div>
             <div class="stat-item"><span class="stat-label">Starting Tech</span><span class="stat-value">AI Dev Algorithm</span></div>
-            <div class="stat-item"><span class="stat-label">Disposition</span><span class="stat-value">Calculated</span></div>
+            <div class="stat-item"><span class="stat-label">Starting Fleet</span><span class="stat-value">2 Carriers, 1 Destroyer, 2 Fighters, 4 Infantry, 1 Space Dock</span></div>
           </div>
         </div>
       </div>
@@ -732,7 +731,7 @@
           </div>
           <div class="ability-block">
             <div class="ability-name">Control Network</div>
-            <div class="ability-text">Compromised PDS have <span class="kw">-1 to rolls</span> against your ships. You may use a compromised space dock you are blockading to produce ships as if it were your own.</div>
+            <div class="ability-text">Compromised PDS have <span class="kw">-1</span> to rolls against your ships. You may use a compromised space dock you are blockading to produce ships as if it were your own.</div>
           </div>
           <div class="ability-block">
             <div class="ability-name">Ransomware</div>
@@ -747,8 +746,8 @@
             <div class="planet-block">
               <div class="planet-name">Kha</div>
               <div class="planet-values">
-                <div class="planet-val"><span class="planet-val-label">Res</span><span class="planet-val-num">3</span></div>
-                <div class="planet-val"><span class="planet-val-label">Inf</span><span class="planet-val-num">2</span></div>
+                <div class="planet-val"><span class="planet-val-label">Resources</span><span class="planet-val-num">3</span></div>
+                <div class="planet-val"><span class="planet-val-label">Influence</span><span class="planet-val-num">2</span></div>
               </div>
               <p class="planet-flavor">"A harsh ocean world battered by hurricanes and tropical storms. One giant city surrounded by towering walls sits on its equator, a beacon of neon in a dark abyss."</p>
             </div>
@@ -756,7 +755,7 @@
           <br>
           <div class="card-title">Promissory Note</div>
           <div class="promissory-card">
-            <span class="timing-tag">Timing — Start of Net-Runners Player's Turn</span>
+            <span class="timing-tag">Timing — Start of Net-Runner Player's Turn</span>
             <div class="promissory-note-name">Shared Network Access</div>
             <div class="ability-text">You may place any combination of up to <span class="kw">2 fighters or infantry</span> from your reinforcements in a system that contains one of your structures. Then, return this card to the Net-Runners player.</div>
           </div>
@@ -777,13 +776,13 @@
               <div class="unit-stat"><span class="unit-stat-label">Cap</span><span class="unit-stat-val">4</span></div>
             </div>
             <div class="unit-abilities"><span class="unit-ability-tag">Sustain Damage</span></div>
-            <div class="unit-text" style="margin-top:8px">Apply an additional <span class="kw">-1</span> to ability rolls made by compromised PDS in this system. Compromised space docks in this system gain <span class="kw">+1 to their PRODUCTION value</span>.</div>
+            <div class="unit-text" style="margin-top:8px">Apply an additional <span class="kw">-1</span> to ability rolls made by compromised PDS in this system. Compromised space docks in this system gain <span class="kw">+1</span>to their <span class="kw"> PRODUCTION </span>value.</div>
           </div>
           <div class="unit-block">
             <div class="unit-name">Siphon I</div>
             <div class="unit-type">Space Dock</div>
             <div class="unit-abilities"><span class="unit-ability-tag">PRODUCTION X+2</span></div>
-            <div class="unit-text" style="margin-top:8px">When using this unit's PRODUCTION ability, discount the combined cost of the units produced by the number of compromised space docks on the game board. Up to <span class="kw">3 fighters</span> in this system do not count towards capacity.</div>
+            <div class="unit-text" style="margin-top:8px">When using this unit's <span class="kw">PRODUCTION</span> ability, discount the combined cost of the units produced by the number of compromised space docks on the game board. Up to <span class="kw">3 fighters</span> in this system do not count towards capacity.</div>
           </div>
         </div>
 
@@ -798,7 +797,7 @@
           <div class="tech-block">
             <div class="tech-name">Siphon II — Space Dock</div>
             <div class="tech-prereq">Prerequisites: [YY]</div>
-            <div class="tech-text">When using this unit's PRODUCTION ability, discount the combined cost of the units produced by the number of compromised structures on the game board. Up to <span class="kw">3 fighters</span> in this system do not count towards capacity.
+            <div class="tech-text">When using this unit's <span class="kw">PRODUCTION</span> ability, discount the combined cost of the units produced by the number of compromised structures on the game board. Up to <span class="kw">3 fighters</span> in this system do not count towards capacity.
             <br><br><em>PRODUCTION X+4</em></div>
           </div>
         </div>
@@ -809,7 +808,7 @@
         <div class="card agent-card">
           <div class="card-title">Agent — Overclock</div>
           <div class="ability-name" style="color:#60c880;margin-bottom:8px">Production Specialist</div>
-          <div class="ability-text">When any player's unit uses its PRODUCTION ability: You may exhaust this card to allow that player to choose 1 non-home, non-legendary planet with no attachments adjacent to one of their planets that is controlled by another player. They may use its resources as if they controlled it for this use of PRODUCTION.</div>
+          <div class="ability-text">When any player's unit uses its <span class="kw">PRODUCTION</span> ability: You may exhaust this card to allow that player to choose 1 non-home, non-legendary planet with no attachments adjacent to one of their planets that is controlled by another player. They may use its resources as if they controlled it for this use of <span class="kw">PRODUCTION</span>.</div>
           <div class="ability-flavor">"Initiate Protocol: Resource Siphon."</div>
         </div>
         <!-- COMMANDER -->
@@ -842,7 +841,7 @@
           <div class="card-title">Breakthrough</div>
           <div class="breakthrough-name">Disruption</div>
           <span class="synergy-tag">Synergy — Yellow · Green</span>
-          <div class="ability-text">When you activate a system, or a system that contains 1 or more of your units is activated: You may choose 1 unit ability; that unit ability cannot be used during this tactical action.<br><br>You may treat compromised structures as if they were yours for the purposes of <span class="kw">scoring objectives</span>.</div>
+          <div class="ability-text">When you activate a system, or a system that contains 1 or more of your units is activated: You may choose 1 unit ability; that unit ability cannot be used during this tactical action.<br><br>You may treat compromised structures as if they were yours for the purposes of scoring objectives.</div>
         </div>
       </div>
 
@@ -1578,7 +1577,7 @@
   </main>
 
   <footer>
-    <p>✦ Custom Fan Expansion — Factions of the Void ✦</p>
+    <p>✦ Deep Reaches - A fan expansion for Twilight Imperium 4th Edition ✦</p>
     <p style="margin-top:8px;font-size:0.55rem">This is a fan-made expansion. Twilight Imperium is a product of Fantasy Flight Games.</p>
   </footer>
 </div>
