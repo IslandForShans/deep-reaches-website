@@ -829,26 +829,26 @@
 
       <!-- FACTION NAV -->
       <nav class="faction-nav">
-        <button
-          class="faction-tab active"
-          onclick="showFaction('netrunners', this)"
-        >
-          The Kha'Zyrr Net-Runners
-        </button>
-        <button class="faction-tab" onclick="showFaction('irontide', this)">
-          The Iron Tide
-        </button>
-        <button class="faction-tab" onclick="showFaction('dreaming', this)">
-          The Dreaming Throne
-        </button>
-        <button class="faction-tab" onclick="showFaction('crystellum', this)">
-          The Crystellum
+        <button class="faction-tab active" onclick="showFaction('architects', this)">
+          The Architects of Ta
         </button>
         <button class="faction-tab" onclick="showFaction('ashen', this)">
           The Ashen Legion
         </button>
-        <button class="faction-tab" onclick="showFaction('architects', this)">
-          The Architects of Ta
+        <button class="faction-tab" onclick="showFaction('crystellum', this)">
+          The Crystellum
+        </button>
+        <button class="faction-tab" onclick="showFaction('dreaming', this)">
+          The Dreaming Throne
+        </button>
+        <button class="faction-tab" onclick="showFaction('irontide', this)">
+          The Iron Tide
+        </button>
+        <button class="faction-tab" onclick="showFaction('netrunners', this)">
+          The Kha'Zyrr Net-Runners
+        </button>
+        <button class="faction-tab" onclick="showFaction('natau', this)">
+          The Natau Priesthood
         </button>
       </nav>
 
@@ -873,7 +873,7 @@
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Home System</span
-                  ><span class="stat-value">Kha (3R/2I)</span>
+                  ><span class="stat-value">Kha</span>
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Starting Tech</span
@@ -894,29 +894,25 @@
               <div class="ability-block">
                 <div class="ability-name">System Breach</div>
                 <div class="ability-text">
-                  When one of your neighbors places a structure using the
-                  primary or secondary ability of the "Construction" strategy
-                  card: You may place
-                  one of that player's control tokens on
-                  your faction sheet.
+                  When any of your neighbors places a structure: You may place
+                  one of that player's control tokens on your faction sheet.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Control Network</div>
                 <div class="ability-text">
-                  You may spend 1 player's control token from your faction sheet
-                  to either add a -1 to the rolls of
-                  that player's next use of Space Cannon, or
-                  produce at that player's space dock if
-                  you are blockading it.
+                  At any time, you may spend 1 player's control token from your
+                  faction sheet and return it to their reinforcements to
+                  either: add a -1 to that player's Space Cannon rolls, or
+                  produce at that player's space dock if you are blockading it.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Ransomware</div>
                 <div class="ability-text">
                   During the status phase, a player whose control token is on
-                  your faction sheet may
-                  pay you 1 trade good to remove 1 token there per trade good spent.
+                  your faction sheet may pay you 1 trade good to remove 1 of
+                  their control tokens from your faction sheet.
                 </div>
               </div>
             </div>
@@ -934,7 +930,7 @@
                     </div>
                     <div class="planet-val">
                       <span class="planet-val-label">Influence</span
-                      ><span class="planet-val-num">2</span>
+                      ><span class="planet-val-num">4</span>
                     </div>
                   </div>
                   <p class="planet-flavor">
@@ -1017,10 +1013,8 @@
                   Prerequisites: [<span style="color: yellow">Y</span>]
                 </div>
                 <div class="tech-text">
-                  You may exhaust this card to
-                  remove any number of control tokens
-                  from your faction sheet; if you do, gain an equal number of
-                  trade goods from the supply.
+                  At the start of the status phase, gain 1 trade good for every
+                  2 other players' control tokens on your faction sheet.
                 </div>
               </div>
               <div class="tech-block">
@@ -1068,12 +1062,11 @@
               </div>
               <div class="ability-text">
                 <em
-                  >Unlock: Remove 2 other players' control tokens from your
+                  >Unlock: Remove 2 different players' control tokens from your
                   faction sheet.</em
-                ><br /><br />When you are not the active player: During Space
-                Cannon Offense, you may use
-                1 PDS owned by a player whose control
-                token is on your faction sheet as if you controlled it.
+                ><br /><br />During the Space Cannon Offense sub-step of a
+                tactical action: You may use 1 PDS owned by a player whose
+                control token is on your faction sheet as if you controlled it.
               </div>
               <div class="ability-flavor">
                 "Hold on, I think I can override its controls.....Got it! Fire!"
@@ -1150,7 +1143,11 @@
                 </div>
                 <div class="starting-item">
                   <div class="starting-dot"></div>
-                  4 Infantry
+                  5 Infantry
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 PDS
                 </div>
                 <div class="starting-item">
                   <div class="starting-dot"></div>
@@ -1165,29 +1162,61 @@
             <div class="lore-text">
               Kha is a world of storms. Cyclones circle its equator without
               pause, hammering oceans into waves that would overwhelm any city
-              unprepared. One city endures, rising from the surf like steel
-              cliffs. Neon light cuts through rain and darkness, tracing streets
-              that pulse with unseen activity. Above, Zyrr hangs close, its
-              gravity locked in constant embrace. Tides and storms are
-              amplified, yet stabilized, creating a lattice of energy, flow, and
-              signal that spans both worlds. Only those attuned can perceive
-              it.<br /><br />Those who perceive it became the Net-Runners. They
-              emerged not by conquest, persuasion, or ceremony, but by
-              understanding patterns hidden within the systems of their worlds.
-              Power grids, relays, and stabilizers whisper in ways most cannot
-              hear. Those who listen learn to inhabit the spaces between
-              signals. They move unseen, shaping outcomes without force, guiding
-              events through subtle nudges.<br /><br />The Net-Runners have no
-              singular authority. Leadership is emergent, formed by those most
-              sensitive to the flows of information and energy. Names are
-              temporary. Decisions arise from observation and pattern rather
-              than ambition. Intervention occurs only where inefficiency or
-              weakness reveals itself. When order persists, they remain hidden,
-              silent, nearly undetectable.<br /><br />To outsiders, their
-              influence is inexplicable. Fleets hesitate, cities stumble, plans
-              fail, and policy collapses. No visible hand directs these events,
-              yet the results are precise and inevitable. The Net-Runners are
-              not hostile in the traditional sense. They are inevitable.
+              unprepared to receive them. One city endures, rising from the
+              surf like steel cliffs, its foundations sunk deep into bedrock
+              that has not shifted in ten thousand years. Neon light cuts
+              through rain and darkness, tracing streets that pulse with unseen
+              activity, each corridor a vein carrying something that is not
+              quite electricity and not quite intention. Above, Zyrr hangs
+              close, its gravity locked in constant embrace. Tides and storms
+              are amplified, yet stabilized, creating a lattice of energy,
+              flow, and signal that spans both worlds. The relationship between
+              the two is not merely astronomical. It is structural. Only those
+              attuned can perceive it, and perception, on Kha, is
+              everything.<br /><br />Those who perceive it became the
+              Net-Runners. They emerged not by conquest, persuasion, or
+              ceremony, but by understanding patterns hidden within the systems
+              of their worlds. Power grids, relays, and stabilizers whisper in
+              ways most cannot hear. The languages they speak are not taught in
+              institutions or passed down through lineages. They are
+              discovered, usually alone, usually in the hours between sleep and
+              waking when the mind is too tired to ignore what it has been
+              trained to dismiss. Those who listen learn to inhabit the spaces
+              between signals. They move unseen, shaping outcomes without
+              force, guiding events through subtle nudges that compound over
+              time into pressures no single source could explain. Where others
+              see noise, they see instruction. Where others see malfunction,
+              they see opportunity.<br /><br />The Net-Runners have no singular
+              authority. Leadership is emergent, formed by those most sensitive
+              to the flows of information and energy at any given moment,
+              shifting as circumstances shift and dissolving when the moment has
+              passed. Names are temporary. Identity is functional, adopted for
+              the duration of a task and set aside when that task concludes.
+              Decisions arise from observation and pattern rather than
+              ambition, formed through a kind of distributed deliberation that
+              has no chamber, no vote, and no record. Intervention occurs only
+              where inefficiency or weakness reveals itself, where a gap has
+              opened in a system that the system itself cannot close. When
+              order persists, they remain hidden, silent, nearly undetectable,
+              content to watch the machinery of the galaxy turn without their
+              touch.<br /><br />To outsiders, their influence is inexplicable.
+              Fleets hesitate at coordinates no known intelligence has
+              compromised. Cities stumble without visible cause, their supply
+              chains disrupted and their communications fractured by faults
+              that repair crews cannot locate. Plans fail at the moment of
+              execution. Policy collapses before opposition has organized. No
+              visible hand directs these events, yet the results are precise
+              and inevitable, unfolding with a consistency that rules out
+              coincidence and defies investigation. Those who attempt to
+              confront them discover that the problem has shifted, moved beyond
+              reach, corrected before it can be countered. Every approach is
+              anticipated. Every escalation is already priced into an outcome
+              the Net-Runners settled on long before their adversary understood
+              the game had started. They are not hostile in the traditional
+              sense. Hostility implies a struggle between equals. The
+              Net-Runners do not struggle. They are inevitable.<br /><br />
+              Everything can be observed. Everything can be influenced.
+              Everything can be rewritten.
             </div>
           </div>
         </div>
@@ -1214,7 +1243,7 @@
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Home System</span
-                  ><span class="stat-value">Kymore (4R/2I)</span>
+                  ><span class="stat-value">Kymore</span>
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Starting Tech</span
@@ -1250,9 +1279,8 @@
               <div class="ability-block">
                 <div class="ability-name">Iron Resilience</div>
                 <div class="ability-text">
-                  Your ground forces
-                  cannot be removed or destroyed by any
-                  game effects outside of combat.
+                  Your ground forces cannot be removed or destroyed by any game
+                  effects outside of combat or when exceeding capacity.
                 </div>
               </div>
             </div>
@@ -1286,7 +1314,7 @@
                   >Timing — During combat against a player other than the Iron
                   Tide player</span
                 >
-                <div class="promissory-note-name">Iron Tide Promissory</div>
+                <div class="promissory-note-name">Promissory Note</div>
                 <div class="ability-text">
                   When one of your mechs is destroyed, you may place
                   1 infantry from your reinforcements on
@@ -1382,9 +1410,8 @@
                   >]
                 </div>
                 <div class="tech-text">
-                  You may exhaust this card at the start of ground combat. If
-                  you do, your mechs roll an
-                  additional die for the first round of
+                  You may exhaust this card at the start of combat to allow
+                  your mechs to roll an additional die for the first round of
                   combat.
                 </div>
               </div>
@@ -1417,9 +1444,8 @@
                 <em
                   >Unlock: Win a combat in which one of your mechs
                   participated.</em
-                ><br /><br />When attacking, you may
-                reroll 1 of your mechs' combat die per
-                round.
+                ><br /><br />During a round of combat, after the "roll dice"
+                step: You may reroll all of your mechs misses.
               </div>
               <div class="ability-flavor">"Steel bends. Will does not."</div>
             </div>
@@ -1442,6 +1468,16 @@
           </div>
 
           <div class="section-grid">
+            <div class="card">
+              <div class="card-title">Additional Components</div>
+              <div class="ability-block">
+                <div class="ability-name">Mech Token (x2)</div>
+                <div class="ability-text">
+                  The Iron Tide begins with 2 additional mech tokens in their
+                  reinforcement pool, for a total of 6 mechs.
+                </div>
+              </div>
+            </div>
             <div class="breakthrough-card">
               <div class="card-title">Breakthrough</div>
               <div class="breakthrough-name">Foundry Network</div>
@@ -1501,18 +1537,56 @@
               iron and industry, have built their entire existence around a
               single, unshakeable truth: survival belongs to those who can forge
               it with their own hands.<br /><br />Millennia ago, the ancestors
-              of the Iron Tide arrived at Kymore as refugees, their colony ships
-              failing, their options exhausted. What they found was not
-              salvation but a challenge: a barren, metal-rich world that offered
-              nothing but raw materials and the opportunity to use them. They
-              cannibalized their dying fleet, built the first foundries, and
-              began the work that would never truly end.<br /><br />The Iron
-              Tide is governed by those who have proven themselves through
-              measurable achievement in production, logistics, and military
-              coordination. Their Commander in Chief holds authority not through
-              birth or election, but through demonstrated excellence. The Iron
-              Tide advances not with the fury of zealots but with the steady,
-              inexorable momentum of a perfectly maintained machine.
+              of the Iron Tide arrived at Kymore as refugees, their colony
+              ships failing, their options exhausted. What they found was not
+              salvation but a challenge: a barren, metal-rich world that
+              offered nothing but raw materials and the opportunity to use
+              them. They cannibalized their dying fleet, built the first
+              foundries, and began the work that would never truly end.
+              Generation after generation, they built upon what came before,
+              until the original surface of Kymore disappeared beneath layers
+              of cities, factories, and the endless monotony of
+              production.<br /><br />The Iron Tide is governed by those who
+              have proven themselves through measurable achievement in
+              production, logistics, and military coordination. Their Commander
+              in Chief holds authority not through birth or election, but
+              through demonstrated excellence in expanding the capabilities of
+              their civilization. Every citizen serves in the foundries and the
+              military, learning the twin disciplines that define their
+              culture: the precision of manufacturing and the resilience
+              required to protect it.<br /><br />They do not view themselves as
+              conquerors or crusaders. The Iron Tide seeks something both
+              simpler and more profound: security that cannot be revoked,
+              resources that cannot be denied, and recognition as a power that
+              cannot be ignored or dismissed. They have learned, through
+              centuries of struggle on an unforgiving world, that survival is
+              never guaranteed. It must be built, maintained, and defended with
+              absolute commitment.<br /><br />The galaxy offers what Kymore
+              never could: room to expand, resources beyond measure, and the
+              possibility of a future not constrained by the limitations of a
+              single industrialized world. But expansion brings risk. The Iron
+              Tide must venture beyond their foundries, beyond the systems they
+              know and control, into a galaxy where other civilizations possess
+              strength that might rival or exceed their own.<br /><br />This
+              possibility does not deter them. The people of Kymore transformed
+              a hostile rock into a thriving civilization through discipline,
+              innovation, and the unwavering belief that proper organization
+              can overcome any obstacle. They will approach the galaxy with the
+              same methodology that built their world: careful planning,
+              efficient execution, and the understanding that every setback is
+              merely a problem to be solved through better engineering.<br /><br />The
+              Iron Tide advances not with the fury of zealots but with the
+              steady, inexorable momentum of a perfectly maintained machine.
+              They offer partnership to those who share their values of
+              reliability and mutual benefit. They offer destruction to those
+              who threaten what they have built. And they offer no apologies
+              for either, because the people of Kymore learned long ago that
+              the galaxy respects strength, competence, and the will to persist
+              when others would falter.<br /><br />They do not inherit their
+              future. They forge it. And they will not stop forging until the
+              entire galaxy recognizes what the foundries of Kymore have always
+              known: that civilization belongs to those with the skill to build
+              it and the strength to defend it.
             </div>
           </div>
         </div>
@@ -1540,17 +1614,16 @@
                   ><span class="stat-value">3</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Homes</span
+                  <span class="stat-label">Home System</span
                   ><span class="stat-value"
-                    >Xyl'ath (3R/0I) · Kath'ulun (0R/3I) | Nebula</span
+                    >Xyl'ath · Kath'ulun | Nebula</span
                   >
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Starting Tech</span
                   ><span class="stat-value"
-                    >Any <span class="tech-badge tech-blue">Blue</span> or
-                    <span class="tech-badge tech-green">Green</span> with no
-                    prerequisites</span
+                    ><span class="tech-badge tech-blue">Gravity Drive</span
+                    ></span
                   >
                 </div>
               </div>
@@ -1563,11 +1636,8 @@
               <div class="ability-block">
                 <div class="ability-name">Dream Nexus</div>
                 <div class="ability-text">
-                  At the end of your tactical actions, you may place or move
-                  1 nexus token into the active system.
-                  Systems with your nexus tokens are
-                  adjacent to each other for your units.
-                  Nexus tokens cannot be placed in your home system.
+                  Systems that contain your nexus tokens are adjacent to each
+                  other for your units.
                 </div>
               </div>
               <div class="ability-block">
@@ -1677,20 +1747,54 @@
                   ability, produce and assign 1 hit to your opponent's ships.
                 </div>
               </div>
+              <div class="unit-block">
+                <div class="unit-name">Liturgy I</div>
+                <div class="unit-type">Destroyer</div>
+                <div class="unit-stats">
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Cost</span
+                    ><span class="unit-stat-val">1</span>
+                  </div>
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Combat</span
+                    ><span class="unit-stat-val">9</span>
+                  </div>
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Move</span
+                    ><span class="unit-stat-val">2</span>
+                  </div>
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Cap</span
+                    ><span class="unit-stat-val">1</span>
+                  </div>
+                </div>
+                <div class="unit-abilities">
+                  <span class="unit-ability-tag"
+                    >Anti-Fighter Barrage 9×2</span
+                  >
+                </div>
+                <div class="unit-text" style="margin-top: 8px">
+                  After you move this ship, you may place or move 1 nexus
+                  token into this unit's system.
+                </div>
+              </div>
             </div>
 
             <div class="card">
               <div class="card-title">Technologies</div>
-              <div class="tech-block tech-green">
-                <div class="tech-name">Directa Obscura</div>
+              <div class="tech-block tech-red">
+                <div class="tech-name">Liturgy II — Destroyer</div>
                 <div class="tech-prereq">
-                  Prerequisites: [<span style="color: green">GG</span>]
+                  Prerequisites: [<span style="color: var(--accent-red)"
+                    >RR</span
+                  >]
                 </div>
                 <div class="tech-text">
-                  When you would spend a token from your strategy pool, you may
-                  exhaust this card to
-                  remove a nexus token from the game
-                  board and use it instead.
+                  After you move this ship, you may place or move 1 nexus token
+                  into any system containing your unit's.<br /><br /><em
+                    >Cost 1, Combat 8, Move 3, Capacity 1 —
+                    Anti-Fighter Barrage 6×3</em
+                  >
                 </div>
               </div>
               <div class="tech-block tech-blue">
@@ -1715,11 +1819,11 @@
                 Dream-Seeker
               </div>
               <div class="ability-text">
-                During any player's tactical action: You may exhaust this card
-                to allow that player to choose 1 system that contains an
-                anomaly. That player
-                ignores any movement effects of that
-                anomaly during this tactical action.
+                During the Movement step of any player's tactical action: You
+                may exhaust this card to allow that player to choose 1
+                non-home system that contains an anomaly. That player ignores
+                any movement effects of that anomaly in that system during this
+                tactical action.
               </div>
               <div class="ability-flavor">
                 "I do not move. I simply am where the Throne dreams me to be."
@@ -1746,14 +1850,15 @@
             <div class="card hero-card">
               <div class="card-title">Hero — Shuulgoroth</div>
               <div class="ability-name" style="margin-bottom: 8px">
-                The Nightmare Made Flesh · Reality Unbound
+                The Nightmare Made Flesh · Reality Unbound - Unknown Geometries
               </div>
               <div class="ability-text">
-                ACTION: Place or move up to
-                3 of your nexus tokens into any non-home
-                systems other than Mecatol Rex. Then, you may place your
-                flagship in any system that contains a planet you control,
-                resolving combat if necessary. Then, purge this card.
+                ACTION: Place or move up to 3 of your nexus tokens into any
+                non-home systems other than the Mecatol Rex system. Then, you
+                may place your flagship and up to 3 destroyers in any system
+                that contains a planet you control. If that system contains
+                another player's ships, you must resolve combat. Then, purge
+                this card.
               </div>
               <div class="ability-flavor">
                 "I am the Throne's attention given form. Where I am, the dream
@@ -1762,52 +1867,6 @@
             </div>
           </div>
 
-          <div class="section-grid">
-            <div class="breakthrough-card">
-              <div class="card-title">Breakthrough</div>
-              <div class="breakthrough-name">Dream-Space Convergence</div>
-              <span class="synergy-tag"
-                >Synergy — <span style="color: blue">Blue</span> ·
-                <span style="color: green">Green</span></span
-              >
-              <div class="ability-text">
-                After any player activates a system that contains one of your
-                nexus tokens and 1 or more of your units, you may
-                move 1 ship into the active system from
-                an adjacent system, or exhaust this card to gain
-                1 command token.
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-title">Starting Units</div>
-              <div class="starting-grid">
-                <div class="starting-item">
-                  <div class="starting-dot"></div>
-                  2 Carriers
-                </div>
-                <div class="starting-item">
-                  <div class="starting-dot"></div>
-                  1 Destroyer
-                </div>
-                <div class="starting-item">
-                  <div class="starting-dot"></div>
-                  3 Fighters
-                </div>
-                <div class="starting-item">
-                  <div class="starting-dot"></div>
-                  3 Infantry
-                </div>
-                <div class="starting-item">
-                  <div class="starting-dot"></div>
-                  1 PDS
-                </div>
-                <div class="starting-item">
-                  <div class="starting-dot"></div>
-                  1 Space Dock
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="section-grid">
             <div class="card">
               <div class="card-title">Mech — The Recurring</div>
@@ -1831,6 +1890,50 @@
                 flagship.
               </div>
             </div>
+            <div class="breakthrough-card">
+              <div class="card-title">Breakthrough</div>
+              <div class="breakthrough-name">Dream-Space Convergence</div>
+              <span class="synergy-tag"
+                >Synergy — <span style="color: var(--accent-red)">Red</span> ·
+                <span style="color: green">Green</span></span
+              >
+              <div class="ability-text">
+                At the start of your turn, you may exhaust this card to move 1
+                nexus token into a system that contains a planet you control.
+                When you win a combat as the defender in a system that contains
+                a nexus token, you may remove your command token from that
+                system and return it to your reinforcements.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">Starting Units</div>
+              <div class="starting-grid">
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Carrier
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  2 Destroyers
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  2 Fighters
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  4 Infantry
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 PDS
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Space Dock
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="card">
@@ -1851,12 +1954,37 @@
               with these ripples. A few do not. Through dreams, hallucinations,
               or moments of impossible clarity, certain individuals perceive a
               horizon that thinks. A presence vast enough that entire histories
-              bend beneath its imagined weight.<br /><br />What the Dreaming
-              Throne desires remains unknown. Some believe it is indifferent,
-              its influence no more deliberate than gravity. Others fear it is
-              slowly becoming aware, using altered minds as instruments to
-              perceive the universe it has shaped but never witnessed. If that
-              awareness completes, the consequences are beyond prediction.
+              bend beneath its imagined weight. To encounter it is to be
+              altered, not by madness, but by understanding that cannot be
+              unlearned.<br /><br />The first worlds to feel this influence
+              were unremarkable and vulnerable. Their aging star faltered, and
+              where energy waned, the boundaries of reality thinned. Storms
+              formed that defied natural law. Oceans rose and consumed ancient
+              cities. On a barren sister world, impossible symbols emerged
+              across the surface, equations etched into stone that described
+              shapes space was never meant to contain.<br /><br />Those who
+              studied these signs did not receive instruction. They received
+              insight. They learned to move through angles that should not
+              exist, to treat distance as suggestion rather than law. These
+              discoveries spread quietly, shared among those capable of
+              perceiving them. A network formed, bound not by doctrine, but by
+              shared experience.<br /><br />The influence did not spread
+              through conquest or persuasion. It spread through proximity.
+              Exposure alone was enough to awaken something dormant. Those
+              affected returned to their lives outwardly unchanged, yet their
+              decisions began to align in subtle ways. Political outcomes
+              shifted. Conflicts resolved unexpectedly. Discoveries emerged
+              that defied established logic. No coordination could be proven,
+              yet patterns became impossible to ignore.<br /><br />What the
+              Dreaming Throne desires remains unknown. Some believe it is
+              indifferent, its influence no more deliberate than gravity.
+              Others fear it is slowly becoming aware, using altered minds as
+              instruments to perceive the universe it has shaped but never
+              witnessed.<br /><br />If that awareness completes, the
+              consequences are beyond prediction.<br /><br />The Dreaming
+              Throne does not command. It does not threaten. It does not
+              persuade.<br /><br />It exists. And existence, at that scale, is
+              enough.
             </div>
           </div>
         </div>
@@ -1884,9 +2012,9 @@
                   ><span class="stat-value">2</span>
                 </div>
                 <div class="stat-item">
-                  <span class="stat-label">Homes</span
+                  <span class="stat-label">Home System</span
                   ><span class="stat-value"
-                    >Spire (0R/2I) · Prism (4R/0I)</span
+                    >Prisma · Spire</span
                   >
                 </div>
                 <div class="stat-item">
@@ -1920,19 +2048,24 @@
                   that system.
                 </div>
               </div>
-              <div class="ability-block">
-                <div class="ability-name">Convalescence</div>
-                <div class="ability-text">
-                  At the end of a space combat in the active system:
-                  Repair 1 of your ships that
-                  participated in that combat.
-                </div>
-              </div>
             </div>
 
             <div class="card">
               <div class="card-title">Home System</div>
               <div class="home-system">
+                <div class="planet-block">
+                  <div class="planet-name">Prisma</div>
+                  <div class="planet-values">
+                    <div class="planet-val">
+                      <span class="planet-val-label">Res</span
+                      ><span class="planet-val-num">4</span>
+                    </div>
+                    <div class="planet-val">
+                      <span class="planet-val-label">Inf</span
+                      ><span class="planet-val-num">1</span>
+                    </div>
+                  </div>
+                </div>
                 <div class="planet-block">
                   <div class="planet-name">Spire</div>
                   <div class="planet-values">
@@ -1946,26 +2079,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="planet-block">
-                  <div class="planet-name">Prism</div>
-                  <div class="planet-values">
-                    <div class="planet-val">
-                      <span class="planet-val-label">Res</span
-                      ><span class="planet-val-num">4</span>
-                    </div>
-                    <div class="planet-val">
-                      <span class="planet-val-label">Inf</span
-                      ><span class="planet-val-num">0</span>
-                    </div>
-                  </div>
-                </div>
               </div>
               <br />
               <div class="card-title">Promissory Note</div>
               <div class="promissory-card">
                 <span class="timing-tag"
-                  >Timing — After 1 of your non-fighter ships is destroyed
-                  during combat against another player</span
+                  >Timing — After 1 of your non-fighter ships in the active
+                  system is destroyed during combat against a player other than
+                  the Crystellum</span
                 >
                 <div class="promissory-note-name">Fracture</div>
                 <div class="ability-text">
@@ -2013,18 +2134,15 @@
 
             <div class="card">
               <div class="card-title">Technologies</div>
-              <div class="tech-block tech-red">
-                <div class="tech-name">Defensive Architecture</div>
+              <div class="tech-block tech-blue">
+                <div class="tech-name">Resonance Drive</div>
                 <div class="tech-prereq">
-                  Prerequisites: [<span style="color: var(--accent-red)"
-                    >RR</span
-                  >]
+                  Prerequisites: [<span style="color: blue">B</span>]
                 </div>
                 <div class="tech-text">
-                  After 1 or more hits are produced against your units during
-                  space combat, you may exhaust this card to
-                  cancel 1 of those hits. If you do,
-                  produce 1 hit and assign it to 1 of your opponent's ships.
+                  During movement, apply +1 to the move value of your ships
+                  that are transporting a number of units equal to their
+                  capacity value.
                 </div>
               </div>
               <div class="tech-block tech-yellow">
@@ -2065,12 +2183,12 @@
               </div>
               <div class="ability-text">
                 <em
-                  >Unlock: Have 3 ships with a printed capacity value in the
-                  same system at the end of a tactical action.</em
+                  >Unlock: Have ships with a printed capacity value in 3
+                  non-home systems.</em
                 ><br /><br />When you activate a system that contains another
-                player's ships: Your ships with capacity gain
-                +1 to their capacity value until the end
-                of that tactical action.
+                player's ships: For each ship being moved, you may choose to
+                add +1 to that ship's printed capacity value until the end of
+                this tactical action.
               </div>
             </div>
             <div class="card hero-card">
@@ -2093,17 +2211,38 @@
           </div>
 
           <div class="section-grid">
+            <div class="card">
+              <div class="card-title">Mech — Refractum</div>
+              <div class="unit-stats">
+                <div class="unit-stat">
+                  <span class="unit-stat-label">Cost</span
+                  ><span class="unit-stat-val">2</span>
+                </div>
+                <div class="unit-stat">
+                  <span class="unit-stat-label">Combat</span
+                  ><span class="unit-stat-val">6</span>
+                </div>
+              </div>
+              <div class="unit-abilities">
+                <span class="unit-ability-tag">Sustain Damage</span>
+              </div>
+              <div class="unit-text" style="margin-top: 8px">
+                After another player produces 1 or more hits against you during
+                ground combat, you may choose to assign 1 of those hits to 1 of
+                your fighters in the active system instead.
+              </div>
+            </div>
             <div class="breakthrough-card">
               <div class="card-title">Breakthrough</div>
-              <div class="breakthrough-name">Resonance Drive</div>
+              <div class="breakthrough-name">Defensive Architecture</div>
               <span class="synergy-tag"
                 >Synergy — <span style="color: blue">Blue</span> ·
                 <span style="color: var(--accent-red)">Red</span></span
               >
               <div class="ability-text">
-                During movement, apply
-                +1 to the move value of your ships that
-                are transporting units equal to their capacity value.
+                After 1 or more hits are produced against your ships during the
+                first round of a space combat: Cancel 1 of those hits; then,
+                produce and assign 1 hit to your opponent's ships.
               </div>
             </div>
             <div class="card">
@@ -2119,15 +2258,15 @@
                 </div>
                 <div class="starting-item">
                   <div class="starting-dot"></div>
-                  1 Destroyer
+                  1 Cruiser
                 </div>
                 <div class="starting-item">
                   <div class="starting-dot"></div>
-                  3 Fighters
+                  2 Fighters
                 </div>
                 <div class="starting-item">
                   <div class="starting-dot"></div>
-                  3 Infantry
+                  4 Infantry
                 </div>
                 <div class="starting-item">
                   <div class="starting-dot"></div>
@@ -2154,10 +2293,33 @@
               What began as an emergency measure soon proved transformative.<br /><br />The
               Crystellum recognize no singular ruler. Power is expressed through
               the Faceted Will, a distributed convergence that determines
-              outcomes with quiet finality. Fleets deploy without announcement.
-              Borders change without proclamation. Resistance is not crushed in
-              anger, but corrected with patience. To the Crystellum, the galaxy
-              is not a war to be won, but a structure still awaiting completion.
+              outcomes with quiet finality. To external observers, this
+              produces an unsettling stillness. Fleets deploy without
+              announcement. Borders change without proclamation. Resistance is
+              not crushed in anger, but corrected with patience. Conflicts
+              against the Collective often end before their adversaries
+              comprehend that a decisive moment has passed.<br /><br />Throughout
+              the long centuries of imperial dominance, the Crystellum remained
+              distant. They observed the rise of galactic authority with
+              careful attention, noting the inefficiencies inherent in
+              centralized power and the slow decay that followed. When that
+              authority fractured and the galaxy descended into open struggle,
+              the Collective did not react in haste. This outcome had already
+              been accounted for.<br /><br />Now, as ancient powers contend and
+              new claimants grasp for stability, the Crystellum advance with
+              deliberate certainty. Systems brought into alignment grow orderly
+              and predictable. Disorder fades. Production becomes precise.
+              Unrest diminishes until it no longer requires response. Many
+              worlds accept this transformation willingly, exchanging autonomy
+              for permanence. Those that refuse find themselves isolated,
+              anticipated, and rendered inconsequential.<br /><br />The
+              Collective bears no hatred toward its rivals, nor any desire for
+              acclaim. Other civilizations are regarded as unstable
+              configurations that will, in time, require adjustment. To the
+              Crystellum, the galaxy is not a war to be won, but a structure
+              still awaiting completion.<br /><br />As struggles intensify and
+              old authorities vanish into memory, the Collective continues its
+              work. All conflicts, they believe, are temporary.
             </div>
           </div>
         </div>
@@ -2184,7 +2346,7 @@
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Home System</span
-                  ><span class="stat-value">Pyra (4R/1I)</span>
+                  ><span class="stat-value">Pyra</span>
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Starting Tech</span
@@ -2214,7 +2376,7 @@
                 <div class="ability-name">Beauty in Destruction</div>
                 <div class="ability-text">
                   After one of your units is destroyed during combat: You may
-                  spend 3 resources to gain that unit's
+                  spend 1 token from your strategy pool to gain that unit's
                   corresponding unit upgrade technology.
                 </div>
               </div>
@@ -2393,8 +2555,7 @@
                 After a player's ship is destroyed during combat: You may
                 exhaust this card to allow that player to place the destroyed
                 unit in any system that contains at least
-                1 of their ships and their command token</span
-                >.
+                1 of their ships and their command token.
               </div>
               <div class="ability-flavor">
                 "Give me the broken, and I will return the burning."
@@ -2436,22 +2597,6 @@
           </div>
 
           <div class="section-grid">
-            <div class="breakthrough-card">
-              <div class="card-title">Breakthrough</div>
-              <div class="breakthrough-name">From Fire, Resolve</div>
-              <span class="synergy-tag"
-                >Synergy — <span style="color: green">Green</span> ·
-                <span style="color: blue">Blue</span></span
-              >
-              <div class="ability-text">
-                After you roll for your infantry's text ability, if the roll
-                does not succeed, you may exhaust this card to
-                treat it as a success
-                instead.<br /><br />After you roll dice for a unit's BOMBARDMENT
-                ability: You may allow that unit to become damaged to
-                reroll any misses.
-              </div>
-            </div>
             <div class="card">
               <div class="card-title">Mech — Balefire Sentinel</div>
               <div class="unit-stats">
@@ -2473,6 +2618,47 @@
                 planets you control in your home system.
               </div>
             </div>
+            <div class="breakthrough-card">
+              <div class="card-title">Breakthrough</div>
+              <div class="breakthrough-name">From Fire, Resolve</div>
+              <span class="synergy-tag"
+                >Synergy — <span style="color: var(--accent-red)">Red</span> ·
+                <span style="color: blue">Blue</span></span
+              >
+              <div class="ability-text">
+                After you roll for your infantry's text ability, if the roll
+                does not succeed, you may exhaust this card to
+                treat it as a success
+                instead.<br /><br />After you roll dice for a unit's BOMBARDMENT
+                ability: You may allow that unit to become damaged to
+                reroll any misses.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">Starting Units</div>
+              <div class="starting-grid">
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  2 Dreadnoughts
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Carrier
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Fighter
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  4 Infantry
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Space Dock
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="card">
@@ -2489,15 +2675,39 @@
               destruction was an ending. To them, fire was not annihilation, but
               transformation. Life that endured the ash storms and burning
               ground learned to rebuild itself from nothing. Death became a
-              process, not a conclusion. Survival became a discipline.<br /><br />Their
-              fleets are constructed with this philosophy at their core. Vessels
-              are built to burn bright and die violently if required, leaving
-              behind lessons rather than wreckage. Infantry are trained to fight
-              without regard for survival, trusting that even in death they
-              serve a greater purpose.<br /><br />In an age of collapsing
-              empires and fading authority, the Ashen Legion does not fear the
-              fire to come. They welcome it. From ruin, they believe, perfection
-              is inevitable.
+              process, not a conclusion. Survival became a discipline.<br /><br />Ashen
+              society was forged around this belief. Scarcity and loss were
+              embraced as tools of refinement. Weakness was not shunned, but
+              burned away. Those who endured catastrophe were elevated, their
+              scars regarded as proof of worth rather than failure. To fall was
+              expected. To rise again was demanded.<br /><br />As Pyra cooled
+              and stabilized, its people turned outward. The galaxy they
+              encountered was filled with empires clinging desperately to
+              preservation, terrified of loss and obsessed with permanence. The
+              Ashen Legion found such fear incomprehensible. Nothing of value,
+              they believed, could be created without sacrifice. Progress
+              required destruction, and destruction required resolve.<br /><br />Their
+              fleets are constructed with this philosophy at their core.
+              Vessels are built to burn bright and die violently if required,
+              leaving behind lessons rather than wreckage. Infantry are trained
+              to fight without regard for survival, trusting that even in death
+              they serve a greater purpose. Every campaign is a trial by fire,
+              meant to strip away inefficiency and leave behind only what is
+              essential.<br /><br />To outsiders, the Ashen Legion appears
+              reckless, even self-destructive. Worlds see their forces advance
+              through firestorms, orbital bombardment, and catastrophic losses
+              without hesitation. Yet what their enemies fail to understand is
+              that the Legion does not measure strength by what survives a
+              battle, but by what emerges afterward. Each conflict refines them
+              further, burning away weakness and returning them stronger than
+              before.<br /><br />Pyra itself stands as the ultimate symbol of
+              their creed. Beneath layers of ash and blackened stone, life
+              continues to flourish, reshaped but unbroken. Cities rise from
+              volcanic plains, their foundations sunk deep into scorched earth
+              as a reminder of what was lost and what was earned.<br /><br />In
+              an age of collapsing empires and fading authority, the Ashen
+              Legion does not fear the fire to come. They welcome it.<br /><br />From
+              ruin, they believe, perfection is inevitable.
             </div>
           </div>
         </div>
@@ -2521,7 +2731,7 @@
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Home System</span
-                  ><span class="stat-value">Ta (3R/2I)</span>
+                  ><span class="stat-value">Ta</span>
                 </div>
                 <div class="stat-item">
                   <span class="stat-label">Starting Tech</span
@@ -2576,13 +2786,14 @@
                     </div>
                     <div class="planet-val">
                       <span class="planet-val-label">Inf</span
-                      ><span class="planet-val-num">2</span>
+                      ><span class="planet-val-num">3</span>
                     </div>
                   </div>
                   <p class="planet-flavor">
-                    "The planet is covered in golden hexagonal structures. Every
-                    angle, every measurement is precise and exact. Nothing is
-                    wasted in its form."
+                    "The planet is covered in golden hexagonal structures.
+                    These structures are the Cities of the Architects, built
+                    with efficiency in mind. Every angle, every measurement is
+                    precise and exact, nothing is wasted in its form."
                   </p>
                 </div>
               </div>
@@ -2608,33 +2819,31 @@
               <div class="ability-block">
                 <div class="ability-name">Transpose</div>
                 <div class="ability-text">
-                  Attach this card to a non-home planet other than Mecatol Rex.
-                  This planet's resource and influence values are
-                  swapped.
+                  Attach this card to any non-home planet. This planet's
+                  resource and influence values are swapped.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Abundance</div>
                 <div class="ability-text">
-                  Attach this card to a non-home planet other than Mecatol Rex.
-                  This planet's resource value is increased by
-                  2.
+                  Attach this card to any non-home planet. This planet's
+                  resource value is increased by 2.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Prestige</div>
                 <div class="ability-text">
-                  Attach this card to a non-home planet other than Mecatol Rex.
-                  This planet's influence value is increased by
-                  2.
+                  Attach this card to any non-home planet. This planet's
+                  influence value is increased by 2.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Unify</div>
                 <div class="ability-text">
-                  Attach this card to a non-home planet other than Mecatol Rex.
-                  This planet's resource and influence values are
-                  combined.
+                  Attach this card to any non-home planet. This planet's
+                  resource and influence values are combined. When you exhaust
+                  this planet, you may spend it as either resources or
+                  influence.
                 </div>
               </div>
               <div class="ability-block">
@@ -2645,6 +2854,22 @@
                   doubled. When you exhaust this planet,
                   you may explore either the Cultural, Industrial, or Hazardous
                   exploration deck.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Worldshaper Card</div>
+                <div class="ability-text">
+                  Attach this card to a planet you control in the same system
+                  as your flagship. This planet's resource and influence values
+                  are increased by 1.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Worldshaper Card</div>
+                <div class="ability-text">
+                  Attach this card to a planet of your choice that another
+                  player controls in the same system as your flagship. This
+                  planet's resource and influence values are decreased by 1.
                 </div>
               </div>
             </div>
@@ -2731,7 +2956,7 @@
               <div class="ability-text">
                 <em>Unlock: Control 4 planets with Designs.</em><br /><br />When
                 you explore a planet: Gain 1 trade good.
-                If the explored planet has a Design attached to it, gain
+                If the explored planet has an attachment, gain
                 1 additional trade good.
               </div>
               <div class="ability-flavor">
@@ -2757,21 +2982,6 @@
           </div>
 
           <div class="section-grid">
-            <div class="breakthrough-card">
-              <div class="card-title">Breakthrough</div>
-              <div class="breakthrough-name">Adaptive Economy</div>
-              <span class="synergy-tag"
-                >Synergy — <span style="color: green">Green</span> ·
-                <span style="color: var(--accent-red)">Red</span></span
-              >
-              <div class="ability-text">
-                ACTION: You may exhaust this card, or spend 1 token from your
-                strategy pool, to detach a Design from a planet that has one and
-                reattach it to any other planet you
-                control in an adjacent system that does not already have a
-                Design. Then, ready that planet.
-              </div>
-            </div>
             <div class="card">
               <div class="card-title">Mech — Valuator</div>
               <div class="unit-stats">
@@ -2791,6 +3001,50 @@
                 DEPLOY: When you attach a Design to a planet. You may spend
                 1 resource to place a mech on that
                 planet.
+              </div>
+            </div>
+            <div class="breakthrough-card">
+              <div class="card-title">Breakthrough</div>
+              <div class="breakthrough-name">Adaptive Economy</div>
+              <span class="synergy-tag"
+                >Synergy — <span style="color: green">Green</span> ·
+                <span style="color: var(--accent-red)">Red</span></span
+              >
+              <div class="ability-text">
+                ACTION: You may exhaust this card, or spend 1 token from your
+                strategy pool, to detach a Design from a planet that has one and
+                reattach it to any other planet you
+                control in an adjacent system that does not already have a
+                Design. Then, ready that planet.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">Starting Units</div>
+              <div class="starting-grid">
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Carrier
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  2 Cruisers
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  2 Fighters
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  3 Infantry
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 PDS
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Space Dock
+                </div>
               </div>
             </div>
           </div>
@@ -2815,11 +3069,429 @@
               influence and productivity are measured, exchanged, and reshaped
               as circumstances demand. No world is bound to a permanent role. A
               center of culture may be restructured into a hub of output. A
-              barren holding may be elevated into a seat of coordination.<br /><br />Now,
+              barren holding may be elevated into a seat of coordination.
+              Stability is achieved not through tradition, but through constant
+              refinement.<br /><br />For much of galactic history, the
+              Architects remained observers and consultants, their practices
+              tolerated but rarely embraced. Their insistence that even
+              societies could be reorganized unsettled more sentimental powers.
+              When old orders collapsed and long held structures gave way to
+              uncertainty, the Architects recognized what others could not. The
+              galaxy had entered a rare state of incompletion.<br /><br />Now,
               they move with deliberate purpose. New worlds are not just
               claimed, but assessed. Systems are altered to better serve the
-              whole, their values reassigned and their functions clarified. All
-              by the grand design.
+              whole, their values reassigned and their functions clarified.
+              Where restructuring is accepted, prosperity follows quickly.
+              Where it is resisted, correction proceeds with patience rather
+              than malice.<br /><br />To outsiders, the Architects of Ta appear
+              cold, their willingness to use one world to perfect another
+              difficult to reconcile. To the Architects, such judgments lack
+              perspective. Harmony requires sacrifice. Progress requires intent.
+              In time, they believe, every world will assume its proper
+              place.<br /><br />All by the grand design.
+            </div>
+          </div>
+        </div>
+
+        <!-- ════════════════════════════════════════════
+         THE NATAU PRIESTHOOD
+    ════════════════════════════════════════════ -->
+        <div class="faction-panel" id="panel-natau">
+          <div
+            class="faction-hero"
+            style="--faction-color: rgba(130, 80, 160, 0.08)"
+          >
+            <div class="faction-hero-inner">
+              <p class="faction-quote">
+                "A low hum, like it exists in the back of your mind, just out
+                of reach."
+              </p>
+              <h2 class="faction-name">The Natau Priesthood</h2>
+              <p class="faction-tagline">
+                The Bound Source — System: Condat
+              </p>
+              <div class="faction-stats">
+                <div class="stat-item">
+                  <span class="stat-label">Commodities</span
+                  ><span class="stat-value">3</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Home System</span
+                  ><span class="stat-value">Decay · Demise · Disorder</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Starting Tech</span
+                  ><span class="stat-value"
+                    >Choose 1 <span class="tech-badge tech-blue">Blue</span>
+                    or
+                    <span class="tech-badge tech-red">Red</span> tech with no
+                    prerequisites</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-grid">
+            <div class="card">
+              <div class="card-title">Faction Abilities</div>
+              <div class="ability-block">
+                <div class="ability-name">Doctrine</div>
+                <div class="ability-text">
+                  During setup, take the 6 Doctrines and place them in your
+                  reinforcements. Then, choose 2 of those cards; place them in
+                  your play area and ready them.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Paradigm</div>
+                <div class="ability-text">
+                  At the start of the strategy phase, ready your Doctrines.
+                  Then, replace 1 of your current Doctrines with 1 from your
+                  reinforcements.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Decree</div>
+                <div class="ability-text">
+                  You gain the abilities of a Doctrine while it is in your play
+                  area.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Home System</div>
+              <div class="home-system">
+                <div class="planet-block">
+                  <div class="planet-name">Decay</div>
+                  <div class="planet-values">
+                    <div class="planet-val">
+                      <span class="planet-val-label">Res</span
+                      ><span class="planet-val-num">0</span>
+                    </div>
+                    <div class="planet-val">
+                      <span class="planet-val-label">Inf</span
+                      ><span class="planet-val-num">1</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="planet-block">
+                  <div class="planet-name">Demise</div>
+                  <div class="planet-values">
+                    <div class="planet-val">
+                      <span class="planet-val-label">Res</span
+                      ><span class="planet-val-num">1</span>
+                    </div>
+                    <div class="planet-val">
+                      <span class="planet-val-label">Inf</span
+                      ><span class="planet-val-num">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="planet-block">
+                  <div class="planet-name">Disorder</div>
+                  <div class="planet-values">
+                    <div class="planet-val">
+                      <span class="planet-val-label">Res</span
+                      ><span class="planet-val-num">2</span>
+                    </div>
+                    <div class="planet-val">
+                      <span class="planet-val-label">Inf</span
+                      ><span class="planet-val-num">2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="card-title">Promissory Note</div>
+              <div class="promissory-card">
+                <div class="promissory-note-name">Disciple</div>
+                <div class="ability-text">
+                  When you gain this card, place it face up in your play area
+                  near your faction sheet. While this card is in your play
+                  area, you may treat it as though it has the text of 1 of the
+                  Natau player's Doctrines near their faction sheet.
+                  <br /><br />
+                  When you activate a system that contains 1 or more of the
+                  Natau player's ships, return this card to the Natau player.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-grid">
+            <div class="card">
+              <div class="card-title">Flagship & Technologies</div>
+              <div class="unit-block">
+                <div class="unit-name">The Chained</div>
+                <div class="unit-type">Flagship</div>
+                <div class="unit-stats">
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Cost</span
+                    ><span class="unit-stat-val">8</span>
+                  </div>
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Combat</span
+                    ><span class="unit-stat-val">7×2</span>
+                  </div>
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Move</span
+                    ><span class="unit-stat-val">1</span>
+                  </div>
+                  <div class="unit-stat">
+                    <span class="unit-stat-label">Cap</span
+                    ><span class="unit-stat-val">3</span>
+                  </div>
+                </div>
+                <div class="unit-abilities">
+                  <span class="unit-ability-tag">Sustain Damage</span>
+                </div>
+                <div class="unit-text" style="margin-top: 8px">
+                  Other players' units in this system lose their unit
+                  abilities while this unit is not damaged.
+                </div>
+              </div>
+              <div class="tech-block tech-green" style="margin-top: 12px">
+                <div class="tech-name">Divine Order</div>
+                <div class="tech-prereq">
+                  Prerequisites: [<span style="color: green">G</span>]
+                </div>
+                <div class="tech-text">
+                  During the agenda phase, after the speaker votes on the
+                  agenda, you may exhaust this card to treat your votes as if
+                  they were placed on any other outcome.
+                </div>
+              </div>
+              <div class="tech-block tech-red">
+                <div class="tech-name">Ritual Engine</div>
+                <div class="tech-prereq">
+                  Prerequisites: [<span style="color: var(--accent-red)"
+                    >RRR</span
+                  >]
+                </div>
+                <div class="tech-text">
+                  During the first round of combat, choose 1 ship in the active
+                  system to roll X extra combat dice, where X is the number of
+                  unique ship types your opponent has in the combat.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-title">Doctrines</div>
+              <div class="ability-block">
+                <div class="ability-name">Wrath</div>
+                <div class="ability-text">
+                  During combat, your units with SUSTAIN DAMAGE roll an
+                  additional combat die while not damaged.
+                  <br /><br />
+                  You may exhaust this card at the start of a combat you are
+                  participating in to choose 2 other players' ships
+                  participating in this combat; those ships have -1 to their
+                  combat rolls until the end of combat.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Strength</div>
+                <div class="ability-text">
+                  At the start of combat, choose 1 of your units. That unit
+                  gains SUSTAIN DAMAGE until the end of combat.
+                  <br /><br />
+                  You may exhaust this card when another player's unit uses a
+                  unit ability against your units to cancel up to 2 hits
+                  produced by that ability.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Revelation</div>
+                <div class="ability-text">
+                  At the start of the strategy phase, choose 2 common decks.
+                  You may look at the top card of those decks at any time.
+                  <br /><br />
+                  When you draw from 1 of those common decks, you may exhaust
+                  this card to draw 2 cards instead, keeping 1 and returning
+                  the other to the bottom of that deck.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Knowledge</div>
+                <div class="ability-text">
+                  When you research a non-unit upgrade technology, you may
+                  exhaust a planet that has a technology specialty to research
+                  another technology. That technology must match all of that
+                  planet's technology specialties for its requirements.
+                  <br /><br />
+                  You may exhaust this card to ready any technology you own.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Discovery</div>
+                <div class="ability-text">
+                  When you resolve the effects of an exploration card, you may
+                  instead discard that card without resolving its effects to
+                  gain 1 trade good.
+                  <br /><br />
+                  You may exhaust this card to explore the frontier deck in a
+                  system that contains at least 1 of your ships and no planets.
+                </div>
+              </div>
+              <div class="ability-block">
+                <div class="ability-name">Stability</div>
+                <div class="ability-text">
+                  During PRODUCTION, if you produce 3 or more non-fighter
+                  ships, you may produce an additional 2 fighters or infantry
+                  for free. These do not count against your production limit.
+                  <br /><br />
+                  You may exhaust this card to use the production ability of 1
+                  of your space docks in a system that does not contain 1 of
+                  your command tokens or another player's ships. If you do,
+                  place a command token from your reinforcements into that
+                  system.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-grid three-col">
+            <div class="card agent-card">
+              <div class="card-title">Agent — Serael</div>
+              <div class="ability-name" style="margin-bottom: 8px">
+                The Interperator
+              </div>
+              <div class="ability-text">
+                At any time, you may exhaust this card to allow a player to
+                resolve the exhaust effect of 1 of your Doctrines in your
+                reinforcements.
+              </div>
+            </div>
+            <div class="card commander-card">
+              <div class="card-title">Commander — Kaethos</div>
+              <div class="ability-name" style="margin-bottom: 8px">
+                The Unyielding
+              </div>
+              <div class="ability-text">
+                <em>
+                  Unlock: Use the exhaust ability of both of your Doctrines in
+                  your play area during the action phase.
+                </em>
+                <br /><br />
+                When any player scores a secret objective, you may either draw
+                a secret objective or gain 1 command token.
+              </div>
+            </div>
+            <div class="card hero-card">
+              <div class="card-title">Hero — Naethu</div>
+              <div class="ability-name" style="margin-bottom: 8px">
+                The First Voice · The Grand Convocation - Awakening
+              </div>
+              <div class="ability-text">
+                ACTION: Place this card and all of your Doctrines near your
+                faction sheet. During this action phase, when you exhaust 1 of
+                your Doctrines, ready any other Doctrine. At the start of the
+                status phase, return all but 2 of your Doctrines to your
+                reinforcements and purge this card.
+              </div>
+            </div>
+          </div>
+
+          <div class="section-grid">
+            <div class="card">
+              <div class="card-title">Mech — Penitent</div>
+              <div class="unit-stats">
+                <div class="unit-stat">
+                  <span class="unit-stat-label">Cost</span
+                  ><span class="unit-stat-val">2</span>
+                </div>
+                <div class="unit-stat">
+                  <span class="unit-stat-label">Combat</span
+                  ><span class="unit-stat-val">6</span>
+                </div>
+              </div>
+              <div class="unit-abilities">
+                <span class="unit-ability-tag">Sustain Damage</span>
+              </div>
+              <div class="unit-text" style="margin-top: 8px">
+                This unit gains +1 to its combat rolls for each exhausted
+                Doctrine in your play area.
+              </div>
+            </div>
+            <div class="breakthrough-card">
+              <div class="card-title">Breakthrough</div>
+              <div class="breakthrough-name">Tether</div>
+              <span class="synergy-tag"
+                >Synergy — <span style="color: #66a3ff">Blue</span> ·
+                <span style="color: green">Green</span></span
+              >
+              <div class="ability-text">
+                When you retreat, you may retreat to any system that contains 1
+                of your command tokens and no other player's ships.
+                <br /><br />
+                You may exhaust this card at any time to resolve the exhaust
+                effect of 1 of your Doctrines in your reinforcements.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">Starting Units</div>
+              <div class="starting-grid">
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Dreadnought
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Carrier
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Destroyer
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  2 Fighters
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  4 Infantry
+                </div>
+                <div class="starting-item">
+                  <div class="starting-dot"></div>
+                  1 Space Dock
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Lore</div>
+            <div class="lore-text">
+              Out of the frozen dark, where even the stars seemed to hesitate,
+              the Natau stepped into existence. Their bodies were long and
+              elegant, almost beautiful in a strange, unsettling way, but
+              inside, something hard and mechanical ticked away. The Natau
+              sensed the universe through vibrations, reading the hum of energy
+              and layers of reality the rest of creation missed. Reproduction
+              ran on ritual, with the Priesthood guiding the whole community
+              through ceremonies more important than any single birth. Their
+              worlds circled a dying red giant, so their skies glowed thin and
+              red like old wounds.<br /><br />Before the Ascendancy, before
+              they found the Chain of Chronos, the Natau survived by pure
+              stubbornness on Decay. The ground never stopped shaking. Cities
+              rose and fell, always on the edge of collapse. In that chaos they
+              searched for meaning in numbers and patterns and eventually
+              sensed The Source, a vast entity they later named Amaluun, the
+              Liberator.<br /><br />The Priesthood began as the few who could
+              read those vibrations best. Generation after generation, they
+              studied Amaluun's rhythms until they built the Chain of Chronos,
+              forged from condensed time and dark matter, and bound it in the
+              heart of Decay. The Binding let them bend its energy and route it
+              wherever they wished, transforming Decay into a base of power,
+              Demise into an industrial engine, and Disorder into a wellspring
+              of dangerous genius.<br /><br />Every miracle and every advance
+              of the Natau rests on that captive god. They do not pray to it.
+              They farm it. Their civilization rises on stolen cosmic power,
+              cold and relentless, always pressing deeper into the dark between
+              stars.
             </div>
           </div>
         </div>
