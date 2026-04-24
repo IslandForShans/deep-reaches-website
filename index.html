@@ -896,25 +896,27 @@
               <div class="ability-block">
                 <div class="ability-name">System Breach</div>
                 <div class="ability-text">
-                  When any of your neighbors places a structure: You may place
+                  When 1 of your neighbors places a structure: You may place
                   one of that player's control tokens on your faction sheet.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Control Network</div>
                 <div class="ability-text">
-                  At any time, you may spend 1 player's control token from your
-                  faction sheet and return it to their reinforcements to
-                  either: add a -1 to that player's Space Cannon rolls, or
-                  produce at that player's space dock if you are blockading it.
+                  When a player whose control token is on your faction sheet 
+                  rolls dice for SPACE CANNON, you may remove 1 of those tokens 
+                  to apply -1 to those dice. You may remove a player's control 
+                  token from your faction sheet to use the PRODUCTION ability 
+                  of a space dock controlled by that player that you are 
+                  blockading as if it were your own.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Ransomware</div>
                 <div class="ability-text">
                   During the status phase, a player whose control token is on
-                  your faction sheet may pay you 1 trade good to remove 1 of
-                  their control tokens from your faction sheet.
+                  your faction sheet may give you 1 trade good to remove 1 of
+                  their control tokens there.
                 </div>
               </div>
             </div>
@@ -980,7 +982,7 @@
                     ><span class="unit-stat-val">1</span>
                   </div>
                   <div class="unit-stat">
-                    <span class="unit-stat-label">Cap</span
+                    <span class="unit-stat-label">Capacity</span
                     ><span class="unit-stat-val">4</span>
                   </div>
                 </div>
@@ -988,18 +990,20 @@
                   <span class="unit-ability-tag">Sustain Damage</span>
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
-                  Space Cannon cannot be used against
-                  your units in this system. Space docks being blockaded by this
-                  unit cannot produce ground forces.
+                  SPACE CANNON cannot be used against your units
+                  in this system. Space docks being blockaded by 
+                  this unit lose their PRODUCTION ability.
                 </div>
               </div>
               <div class="unit-block">
                 <div class="unit-name">Siphon I</div>
                 <div class="unit-type">Space Dock</div>
                 <div class="unit-abilities">
-                  <span class="unit-ability-tag">PRODUCTION X+2</span>
+                  <span class="unit-ability-tag">PRODUCTION X</span>
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
+                  This unit's PRODUCTION value is equal to 2 more
+                  than this planet's resource value.
                   Up to 3 fighters in this system do not
                   count towards capacity.
                 </div>
@@ -1016,7 +1020,7 @@
                 </div>
                 <div class="tech-text">
                   At the start of the status phase, gain 1 trade good for every
-                  2 other players' control tokens on your faction sheet.
+                  2 control tokens on your faction sheet.
                 </div>
               </div>
               <div class="tech-block">
@@ -1025,12 +1029,14 @@
                   Prerequisites: [<span style="color: yellow">YY</span>]
                 </div>
                 <div class="tech-text">
+                  This unit's PRODUCTION value is equal to 4 more than 
+                  this planet's resource value.
                   When using this unit's
                   PRODUCTION ability, discount the
                   combined cost of the units produced by half the number of
                   control tokens on your faction sheet. Up to
                   3 fighters in this system do not count
-                  towards capacity.<br /><br /><em>PRODUCTION X+4</em>
+                  towards capacity.<br /><br /><em>PRODUCTION X
                 </div>
               </div>
             </div>
@@ -1044,13 +1050,14 @@
                 Production Specialist
               </div>
               <div class="ability-text">
-                When any player's unit uses its
-                PRODUCTION ability: You may exhaust this
-                card to allow that player to choose 1 non-home, non-legendary
-                planet with no attachments adjacent to one of their planets that
-                is controlled by another player. They may use its resources as
-                if they controlled it for this use of
-                PRODUCTION.
+                When a player’s unit uses PRODUCTION:
+                <br /><br />
+                You may exhaust this card to allow that 
+                player to choose 1 planet controlled by 
+                another player in a system adjacent to 
+                that unit. Reduce the combined cost of 
+                the produced units by that planet's 
+                resource value.
               </div>
               <div class="ability-flavor">
                 "Initiate Protocol: Resource Siphon."
@@ -1063,11 +1070,11 @@
                 Saboteur
               </div>
               <div class="ability-text">
-                <em
-                  >Unlock: Remove 2 different players' control tokens from your
-                  faction sheet.</em
-                ><br /><br />During the Space Cannon Offense sub-step of a
-                tactical action: You may use 1 PDS owned by a player whose
+                <em>
+                  Unlock: Remove 2 different players control tokens from your
+                  faction sheet.
+                </em>
+                <br /><br />During "Space Cannon Offense": You may use 1 PDS on the game board owned by a player whose
                 control token is on your faction sheet as if you controlled it.
               </div>
               <div class="ability-flavor">
@@ -1084,7 +1091,7 @@
                 ACTION: Each player with a control token on your faction sheet
                 must choose and destroy 1 structure they
                 own. Place 1 infantry from your reinforcements on each
-                structure's planet that was destroyed in this way, resolving
+                structure's planet that was destroyed in this way, and resolve
                 ground combat if able. Then, purge this card.
               </div>
               <div class="ability-flavor">"We lie in wait."</div>
@@ -1108,7 +1115,7 @@
                 <span class="unit-ability-tag">Sustain Damage</span>
               </div>
               <div class="unit-text" style="margin-top: 8px">
-                DEPLOY: When you place a structure, you may pay
+                DEPLOY: When you place a structure, you may spend
                 1 resource to place a mech with that
                 structure.
               </div>
@@ -1123,8 +1130,8 @@
               <div class="ability-text">
                 When researching a technology owned by a player whose control
                 token is on your faction sheet: For every
-                two of that player's tokens on your
-                faction sheet, you may ignore one of that technology's
+                2 of that player's control token on your
+                faction sheet, you may ignore 1 of that technology's
                 prerequisites.
               </div>
             </div>
@@ -1235,7 +1242,7 @@
               <img src="images/iron-icon.png" width="150px">
               <p class="faction-quote">
                 "We do not inherit our future. We forge it. — Grand Admiral
-                Treshk, Commander in Chief"
+                Treshk, Supreme Chief"
               </p>
               <h2 class="faction-name">The Iron Tide</h2>
               <p class="faction-tagline">The Forged Vanguard — System: Lodra</p>
@@ -1341,7 +1348,7 @@
                   </div>
                   <div class="unit-stat">
                     <span class="unit-stat-label">Combat</span
-                    ><span class="unit-stat-val">7×2</span>
+                    ><span class="unit-stat-val">5×2</span>
                   </div>
                   <div class="unit-stat">
                     <span class="unit-stat-label">Move</span
@@ -1354,7 +1361,7 @@
                 </div>
                 <div class="unit-abilities">
                   <span class="unit-ability-tag">Sustain Damage</span
-                  ><span class="unit-ability-tag">Anti-Fighter Barrage 7</span>
+                  ><span class="unit-ability-tag">Anti-Fighter Barrage 7 (x2)</span>
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
                   Your mechs in this system gain
@@ -1413,9 +1420,7 @@
                   >]
                 </div>
                 <div class="tech-text">
-                  You may exhaust this card at the start of combat to allow
-                  your mechs to roll an additional die for the first round of
-                  combat.
+                  At the start of the first round of combat, you may exhaust this card; for the remainder of this combat round, your mechs roll 1 additional die.
                 </div>
               </div>
             </div>
@@ -1429,9 +1434,7 @@
               </div>
               <div class="ability-text">
                 When a non-combat game effect would instruct a player to remove
-                or destroy 1 of their units: You may instead exhaust this card
-                to allow that player to
-                ignore that effect.
+                or destroy 1 of their units: You may instead exhaust this card.
               </div>
               <div class="ability-flavor">
                 "Waste nothing. Delay nothing. A single idle second can cost a
@@ -1447,8 +1450,7 @@
                 <em
                   >Unlock: Win a combat in which one of your mechs
                   participated.</em
-                ><br /><br />During a round of combat, after the "roll dice"
-                step: You may reroll all of your mechs misses.
+                ><br /><br />During each combat round, you may reroll your mech's combat dice.
               </div>
               <div class="ability-flavor">"Steel bends. Will does not."</div>
             </div>
@@ -1458,9 +1460,9 @@
                 Ironborn · APEX FRAME — MECHA PRIME
               </div>
               <div class="ability-text">
-                After moving at least 1 mech and no ships into the active
-                system: Immediately commit all mechs in the active system to any
-                number of planets in that system, resolve ground combat if able.
+                After moving 1 or more mechs and no other ships into the active
+                system: You may immediately commit all mechs in the active system to any
+                number of planets in that system and resolve ground combat, if able.
                 Then, purge this card.
               </div>
               <div class="ability-flavor">
@@ -1486,13 +1488,12 @@
               <div class="breakthrough-name">Foundry Network</div>
               <span class="synergy-tag"
                 >Synergy — <span style="color: var(--accent-red)">Red</span> ·
-                <span style="color: blue">Blue</span></span
+                <span style="color: green">Green</span></span
               >
               <div class="ability-text">
-                When producing mechs, you may place them at
-                any of your space docks. You do not need
-                to have a mech on a planet when you resolve exploration cards
-                requiring them.
+                When you produce 1 or more mechs, you may place those units
+                with any of your space docks. 
+                <br /><br />When you explore a planet, you may treat that planet as containing 1 of your mechs.
               </div>
             </div>
             <div class="card">
@@ -1640,24 +1641,20 @@
               <div class="ability-block">
                 <div class="ability-name">Dream Nexus</div>
                 <div class="ability-text">
-                  Systems that contain your nexus tokens are adjacent to each
-                  other for your units.
+                  You may treat systems that contain nexus tokens as adjacent to each other.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">The Waking</div>
                 <div class="ability-text">
-                  At the start of the status phase, any player with at least 1
-                  ship in a system containing a nexus token may choose to
-                  remove 1 of your nexus tokens there.
+                  At the end of the status phase, any player with
+                  ships in a system that contains a nexus token may remove 1 token from 1 of those systems.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Incomprehensible Form</div>
                 <div class="ability-text">
-                  When you would lose a ship during combat, you may instead
-                  remove 1 of your nexus tokens from the
-                  active system.
+                  When 1 of your ships would be destroyed during space combat, you may insteaad remove 1 nexus token from the active system.
                 </div>
               </div>
             </div>
@@ -1731,14 +1728,14 @@
                   </div>
                   <div class="unit-stat">
                     <span class="unit-stat-label">Combat</span
-                    ><span class="unit-stat-val">7×2</span>
+                    ><span class="unit-stat-val">5×2</span>
                   </div>
                   <div class="unit-stat">
                     <span class="unit-stat-label">Move</span
                     ><span class="unit-stat-val">1</span>
                   </div>
                   <div class="unit-stat">
-                    <span class="unit-stat-label">Cap</span
+                    <span class="unit-stat-label">Capacity</span
                     ><span class="unit-stat-val">3</span>
                   </div>
                 </div>
@@ -1746,9 +1743,7 @@
                   <span class="unit-ability-tag">Sustain Damage</span>
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
-                  This unit is a nexus token. If you
-                  choose to remove this unit using your Incomprehensible Form
-                  ability, produce and assign 1 hit to your opponent's ships.
+                  This unit is also a nexus token. If it is removed using INCOMPREHENSIBLE FORM, produce 1 hit and assign it to 1 of your opponent's ships.
                 </div>
               </div>
               <div class="unit-block">
@@ -1778,8 +1773,8 @@
                   >
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
-                  After you move this ship, you may place or move 1 nexus
-                  token into this unit's system.
+                  At the end of a tactical action in this unit's system, you may place or move 1 nexus
+                  token into this system.
                 </div>
               </div>
             </div>
@@ -1794,8 +1789,8 @@
                   >]
                 </div>
                 <div class="tech-text">
-                  After you move this ship, you may place or move 1 nexus token
-                  into any system containing your unit's.<br /><br /><em
+                  At the end of a tactical action in this unit's system, you may place or move 1 nexus token
+                  into a system that contains your unit's.<br /><br /><em
                     >Cost 1, Combat 8, Move 3, Capacity 1 —
                     Anti-Fighter Barrage 6×3</em
                   >
@@ -1807,10 +1802,7 @@
                   Prerequisites: [<span style="color: blue">BB</span>]
                 </div>
                 <div class="tech-text">
-                  At the start of your turn, you may choose 1 system with a
-                  nexus token. Your ships are
-                  adjacent to that system for this
-                  tactical action.
+                  During your tactical actions, apply +1 to the move value of any ship that starts its movement in a system that contains 1 or more of your nexus tokens.
                 </div>
               </div>
             </div>
@@ -1823,7 +1815,7 @@
                 Dream-Seeker
               </div>
               <div class="ability-text">
-                During the Movement step of any player's tactical action: You
+                During the "Movement" step of any player's tactical action: You
                 may exhaust this card to allow that player to choose 1
                 non-home system that contains an anomaly. That player ignores
                 any movement effects of that anomaly in that system during this
@@ -1842,9 +1834,9 @@
                 <em
                   >Unlock: Have all 3 of your nexus tokens on the game
                   board.</em
-                ><br /><br />When you vote on an agenda, add
+                ><br /><br />When you cast votes on an agenda, cast an additional number of
                 votes equal to the number of planets in
-                systems that contain nexus tokens.
+                systems that contain 1 or more of your nexus tokens.
               </div>
               <div class="ability-flavor">
                 "You think you have agency. But I have already seen how you will
@@ -1861,7 +1853,7 @@
                 non-home systems other than the Mecatol Rex system. Then, you
                 may place your flagship and up to 3 destroyers in any system
                 that contains a planet you control. If that system contains
-                another player's ships, you must resolve combat. Then, purge
+                another player's ships, resolve combat. Then, purge
                 this card.
               </div>
               <div class="ability-flavor">
@@ -1888,8 +1880,8 @@
                 <span class="unit-ability-tag">Sustain Damage</span>
               </div>
               <div class="unit-text" style="margin-top: 8px">
-                When this unit is destroyed, you may spend
-                1 influence to place it on another
+                When this unit would be destroyed, you may spend
+                1 influence to instead place it on another
                 planet in a system that contains 1 of your nexus tokens or your
                 flagship.
               </div>
@@ -1904,7 +1896,7 @@
               <div class="ability-text">
                 At the start of your turn, you may exhaust this card to move 1
                 nexus token into a system that contains a planet you control.
-                When you win a combat as the defender in a system that contains
+                <br /><br />When you win a combat as the defender in a system that contains
                 a nexus token, you may remove your command token from that
                 system and return it to your reinforcements.
               </div>
@@ -2088,12 +2080,12 @@
               <br />
               <div class="card-title">Promissory Note</div>
               <div class="promissory-card">
+                <div class="promissory-note-name">Fracture</div>
                 <span class="timing-tag"
                   >Timing — After 1 of your non-fighter ships in the active
                   system is destroyed during combat against a player other than
-                  the Crystellum</span
+                  the Crystellum player:</span
                 >
-                <div class="promissory-note-name">Fracture</div>
                 <div class="ability-text">
                   Place 1 fighter from your
                   reinforcements in that system. Then, return this card to the
@@ -2123,7 +2115,7 @@
                     ><span class="unit-stat-val">1</span>
                   </div>
                   <div class="unit-stat">
-                    <span class="unit-stat-label">Cap</span
+                    <span class="unit-stat-label">Capacity</span
                     ><span class="unit-stat-val">4</span>
                   </div>
                 </div>
@@ -2176,9 +2168,9 @@
                 At the end of a player's turn: You may exhaust this card to
                 allow that player to place a number of fighters from their
                 reinforcements in the active system up to the number of
-                non-fighter ships there. If another player, gain trade goods
+                non-fighter ships there. If that player was another player, gain trade goods
                 equal to
-                half the fighters placed (rounded down).
+                half the fighters placed rounded down.
               </div>
             </div>
             <div class="card commander-card">
@@ -2203,11 +2195,7 @@
               </div>
               <div class="ability-text">
                 At the start of a space combat: Place non-fighter ships from
-                your reinforcements equal to the
-                <span class="kw"
-                  >amount and type of each of your opponent's non-fighter
-                  ships</span
-                >
+                your reinforcements equal to the amount and type of each of your opponent's non-fighter ships
                 participating in this combat. Your ships in the active system do
                 not count against your fleet limit. At the end of combat, purge
                 this card.
@@ -2246,8 +2234,8 @@
               >
               <div class="ability-text">
                 After 1 or more hits are produced against your ships during the
-                first round of a space combat: Cancel 1 of those hits; then,
-                produce and assign 1 hit to your opponent's ships.
+                first round of a space combat: Cancel 1 of those hits. then,
+                produce 1 hit and assign it to 1 of your opponent's ships.
               </div>
             </div>
             <div class="card">
@@ -2372,16 +2360,15 @@
               <div class="ability-block">
                 <div class="ability-name">Phoenix Rising</div>
                 <div class="ability-text">
-                  When you roll for your infantry's text ability: On a
-                  9 or 10, you may choose to immediately
-                  place that unit back into combat. If you do; you cannot
-                  resolve that unit's text ability.
+                  When you roll for your infantry's text ability, on a
+                  9 or 10, you may choose for that unit to not be destroyed. If you do; you cannot
+                  resolve the effects of that unit's text ability.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Beauty in Destruction</div>
                 <div class="ability-text">
-                  After one of your units is destroyed during combat: You may
+                  When one of your units is destroyed during combat, you may
                   spend 1 token from your strategy pool to gain that unit's
                   corresponding unit upgrade technology.
                 </div>
@@ -2418,11 +2405,8 @@
                 >
                 <div class="promissory-note-name">From the Ashes</div>
                 <div class="ability-text">
-                  After 1 of your units is destroyed during ground combat, you
-                  may instead
-                  <span class="kw"
-                    >immediately place that unit back into combat</span
-                  >. If you do, return this card to the Ashen Legion player.
+                  When 1 of your units would be destroyed during ground combat, it is not destroyed instead.
+                  Then, return this card to the Ashen Legion player.
                 </div>
               </div>
             </div>
@@ -2441,14 +2425,14 @@
                   </div>
                   <div class="unit-stat">
                     <span class="unit-stat-label">Combat</span
-                    ><span class="unit-stat-val">7×2</span>
+                    ><span class="unit-stat-val">5×2</span>
                   </div>
                   <div class="unit-stat">
                     <span class="unit-stat-label">Move</span
                     ><span class="unit-stat-val">1</span>
                   </div>
                   <div class="unit-stat">
-                    <span class="unit-stat-label">Cap</span
+                    <span class="unit-stat-label">Capacity</span
                     ><span class="unit-stat-val">3</span>
                   </div>
                 </div>
@@ -2477,10 +2461,10 @@
                   </div>
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
-                  When this unit is destroyed, roll 1 die. On a
+                  When this unit would be destroyed, roll 1 die. On a
                   9 or higher, you may produce 1 hit. If
                   you do, place that unit on this card. At the start of your
-                  next turn, place each unit on this card on planets you control
+                  next turn, place each unit that is on this card on planets you control
                   in your home system.
                 </div>
               </div>
@@ -2501,7 +2485,7 @@
                     ><span class="unit-stat-val">1</span>
                   </div>
                   <div class="unit-stat">
-                    <span class="unit-stat-label">Cap</span
+                    <span class="unit-stat-label">Capacity</span
                     ><span class="unit-stat-val">1</span>
                   </div>
                 </div>
@@ -2510,7 +2494,7 @@
                   ><span class="unit-ability-tag">Bombardment 5</span>
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
-                  During combat, after this unit is destroyed, you may use its
+                  During combat, when this unit would be destroyed, you may use its
                   BOMBARDMENT ability against a planet
                   in its system.
                 </div>
@@ -2525,10 +2509,10 @@
                   Prerequisites: [<span style="color: green">GG</span>]
                 </div>
                 <div class="tech-text">
-                  When this unit is destroyed, roll 1 die. On a
+                  When this unit would be destroyed, roll 1 die. On a
                   6 or higher, you may produce 1 hit. If
                   you do, place that unit on this card. At the start of your
-                  next turn, place each unit on this card on planets you control
+                  next turn, place each unit that is on this card on planets you control
                   in your home system.<br /><br /><em>Cost 1×2, Combat 7</em>
                 </div>
               </div>
@@ -2539,12 +2523,12 @@
                   ><span style="color: yellow">Y</span>]
                 </div>
                 <div class="tech-text">
-                  This unit may not be destroyed by "Direct Hit" action cards.
-                  During combat, after this unit is destroyed or uses its
+                  This unit cannot be destroyed by "Direct Hit" action cards.
+                  During combat, when this unit would be destroyed or uses its
                   SUSTAIN DAMAGE ability, you may use its
                   BOMBARDMENT ability against a planet
                   in its system.<br /><br /><em
-                    >Cost 4, Combat 4, Move 2, Cap 1 — Bombardment 4</em
+                    >Cost 4, Combat 4, Move 2, Capacity 1 — Bombardment 4</em
                   >
                 </div>
               </div>
@@ -2558,10 +2542,10 @@
                 Ash-Tender
               </div>
               <div class="ability-text">
-                After a player's ship is destroyed during combat: You may
-                exhaust this card to allow that player to place the destroyed
-                unit in any system that contains at least
-                1 of their ships and their command token.
+                When a player's ship would be destroyed during combat: You may
+                exhaust this card to allow that player to remove that unit from the game board and place
+                it in a different system that contains at least
+                1 of their ships and 1 of their command tokens.
               </div>
               <div class="ability-flavor">
                 "Give me the broken, and I will return the burning."
@@ -2578,9 +2562,9 @@
                 technology: Place
                 1 of the corresponding unit from your
                 reinforcements into a system that contains a planet you control
-                and no other player's ships.<br /><br />Each time you use
-                BOMBARDMENT: For each hit, you may gain 1 commodity, or convert
-                1 commodity to a trade good.
+                and no other player's ships.<br /><br />When you use
+                BOMBARDMENT: For each hit you produce, you may gain 1 commodity, or convert
+                1 of your commodities to a trade good.
               </div>
               <div class="ability-flavor">
                 "Only by losing what you are can you become what you must be."
@@ -2596,7 +2580,7 @@
                 Use each of your unit's BOMBARDMENT abilities in that system
                 against
                 each planet controlled by other players
-                in or adjacent to that system. Then, purge this card.
+                in and adjacent to that system. Then, purge this card.
               </div>
               <div class="ability-flavor">"Death is only the first step."</div>
             </div>
@@ -2619,8 +2603,8 @@
                 <span class="unit-ability-tag">Sustain Damage</span>
               </div>
               <div class="unit-text" style="margin-top: 8px">
-                When this unit is destroyed, place it on this card. At the start
-                of your next turn, place each unit on this card on
+                When this unit would be destroyed, place it on this card. At the start
+                of your next turn, place each unit that is on this card on
                 planets you control in your home system.
               </div>
             </div>
@@ -2632,12 +2616,8 @@
                 <span style="color: blue">Blue</span></span
               >
               <div class="ability-text">
-                After you roll for your infantry's text ability, if the roll
-                does not succeed, you may exhaust this card to
-                treat it as a success
-                instead.<br /><br />After you roll dice for a unit's BOMBARDMENT
-                ability: You may allow that unit to become damaged to
-                reroll any misses.
+                When you would roll a die as part of your infantry's printed text ability, on a 5 or lower, you may exhaust this card to treat the result of that die as a 10.<br /><br />When you roll dice for a unit's BOMBARDMENT
+                ability: You may damage that unit to reroll any number of those dice.
               </div>
             </div>
             <div class="card">
@@ -2764,7 +2744,7 @@
                 <div class="ability-name">Planetary Reconfiguration</div>
                 <div class="ability-text">
                   After you explore a planet, you may attach any 1 of your
-                  Designs from your reinforcements to
+                  designs from your reinforcements to
                   that planet if it does not already have one. When you lose
                   control of a planet with a Design attached, return that card
                   to your reinforcements. Designs do not count as attachments
@@ -2774,9 +2754,7 @@
               <div class="ability-block">
                 <div class="ability-name">Efficient Governance</div>
                 <div class="ability-text">
-                  During the agenda phase, if an outcome you voted for passes,
-                  ready up to 2 planets you exhausted to
-                  vote.
+                  During the agenda phase, after an outcome that you voted for is resolved, ready up to 2 of your planets.
                 </div>
               </div>
             </div>
@@ -2813,8 +2791,8 @@
                 </div>
                 <div class="ability-text">
                   Attach this card to a non-home planet you control: This planet
-                  gains PRODUCTION X as if it were a
-                  unit, with X being the resource value of that planet.
+                  gains PRODUCTION as if it were a unit equal to its resource value.
+                  <br \><br \>PRODUCTION X
                 </div>
               </div>
             </div>
@@ -2900,7 +2878,7 @@
                     ><span class="unit-stat-val">1</span>
                   </div>
                   <div class="unit-stat">
-                    <span class="unit-stat-label">Cap</span
+                    <span class="unit-stat-label">Capacity</span
                     ><span class="unit-stat-val">4</span>
                   </div>
                 </div>
@@ -2908,10 +2886,7 @@
                   <span class="unit-ability-tag">Sustain Damage</span>
                 </div>
                 <div class="unit-text" style="margin-top: 8px">
-                  Any 1 planet you control in this system gains
-                  +1 resource and +1 influence. Any 1
-                  planet controlled by another player in this system has
-                  -1 resource and -1 influence.
+                  1 planet in this system you control has its resource and influence values icnreased by 1, and 1 planet in this system controlled by another player has its resource and influence values reduced by 1.
                 </div>
               </div>
               <div class="tech-block tech-yellow" style="margin-top: 12px">
@@ -2920,9 +2895,7 @@
                   Prerequisites: [<span style="color: yellow">Y</span>] — ACTION
                 </div>
                 <div class="tech-text">
-                  Exhaust this card to place
-                  1 structure on a planet with a Design
-                  attached to it.
+                  Exhaust this card to choose a planet with a design. Place 1 structure from your reinforcements on that planet.
                 </div>
               </div>
               <div class="tech-block tech-green">
@@ -2931,10 +2904,7 @@
                   Prerequisites: [<span style="color: green">GGG</span>]
                 </div>
                 <div class="tech-text">
-                  At any time, exhaust this card to exhaust any planet you
-                  control and ready any other planet you
-                  control. If it is a legendary planet, ready its ability card
-                  as well.
+                  You may exhaust this card and 1 planet you control at any time to ready 1 planet you control. If that planet has an ability card, you may ready it as well.
                 </div>
               </div>
             </div>
@@ -2947,7 +2917,7 @@
                 Appraiser
               </div>
               <div class="ability-text">
-                When a player exhausts a planet to vote on an agenda: You may
+                When a player would exhaust a planet to cast votes during the agenda phase: You may
                 exhaust this card to
                 double that planet's influence value.
               </div>
@@ -2961,7 +2931,7 @@
                 Grand Architect
               </div>
               <div class="ability-text">
-                <em>Unlock: Control 4 planets with Designs.</em><br /><br />When
+                <em>Unlock: Control 4 planets with designs.</em><br /><br />When
                 you explore a planet: Gain 1 trade good.
                 If the explored planet has an attachment, gain
                 1 additional trade good.
@@ -2977,10 +2947,7 @@
                 Architect Savant · Planetary Revaluation — Perfect Efficiency
               </div>
               <div class="ability-text">
-                ACTION: Take the Grand Design and attach it to a planet in your
-                home system. Then,
-                explore each planet with a Design
-                attached to it and ready that planet. Then, purge this card.
+                ACTION: Attach the Grand Design card to a planet in your home system. Explore and ready each planet with a design attached to it. Then, purge this card.
               </div>
               <div class="ability-flavor">
                 "Nothing wasted. Nothing unused."
@@ -3014,15 +2981,12 @@
               <div class="card-title">Breakthrough</div>
               <div class="breakthrough-name">Adaptive Economy</div>
               <span class="synergy-tag"
-                >Synergy — <span style="color: green">Green</span> ·
+                >Synergy — <span style="color: yellow">Yellow</span> ·
                 <span style="color: var(--accent-red)">Red</span></span
               >
               <div class="ability-text">
-                ACTION: You may exhaust this card, or spend 1 token from your
-                strategy pool, to detach a Design from a planet that has one and
-                reattach it to any other planet you
-                control in an adjacent system that does not already have a
-                Design. Then, ready that planet.
+                ACTION: Exhaust this card, or spend 1 token from your
+                strategy pool, to remove 1 design from a planet and attach it to a different planet in an adjacent system that does not have a design attached to it. Then, ready that planet.
               </div>
             </div>
             <div class="card">
@@ -3146,23 +3110,23 @@
               <div class="ability-block">
                 <div class="ability-name">Doctrine</div>
                 <div class="ability-text">
-                  During setup, take the 6 Doctrines and place them in your
-                  reinforcements. Then, choose 2 of those cards; place them in
+                  During setup, take the 6 Natau doctrines and place them in your
+                  reinforcements. Then, choose 2 doctrines; place them in
                   your play area and ready them.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Paradigm</div>
                 <div class="ability-text">
-                  At the start of the strategy phase, ready your Doctrines.
-                  Then, replace 1 of your current Doctrines with 1 from your
+                  At the start of the status phase, ready each doctrine.
+                  Then, replace 1 of your doctrine in your play area with a doctrine from your
                   reinforcements.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Decree</div>
                 <div class="ability-text">
-                  You gain the abilities of a Doctrine while it is in your play
+                  You gain the text abilities of a doctrine while it is in your play
                   area.
                 </div>
               </div>
@@ -3216,13 +3180,11 @@
               <div class="promissory-card">
                 <div class="promissory-note-name">Disciple</div>
                 <div class="ability-text">
-                  When you gain this card, place it face up in your play area
-                  near your faction sheet. While this card is in your play
-                  area, you may treat it as though it has the text of 1 of the
-                  Natau player's Doctrines near their faction sheet.
+                  When you gain this card, place it face up in your play area. While this card is in your play
+                  area, you may treat it as though it has the text abilities of 1 doctrine in the Natau player's play area.
                   <br /><br />
                   When you activate a system that contains 1 or more of the
-                  Natau player's ships, return this card to the Natau player.
+                  Natau player's units, return this card to the Natau player.
                 </div>
               </div>
             </div>
@@ -3248,7 +3210,7 @@
                     ><span class="unit-stat-val">1</span>
                   </div>
                   <div class="unit-stat">
-                    <span class="unit-stat-label">Cap</span
+                    <span class="unit-stat-label">Capacity</span
                     ><span class="unit-stat-val">3</span>
                   </div>
                 </div>
@@ -3266,9 +3228,7 @@
                   Prerequisites: [<span style="color: green">G</span>]
                 </div>
                 <div class="tech-text">
-                  During the agenda phase, after the speaker votes on the
-                  agenda, you may exhaust this card to treat your votes as if
-                  they were placed on any other outcome.
+                  During the agenda phase, after the speaker votes on an agenda: You may exhaust this card to treat your votes as if they were placed on any other outcome.
                 </div>
               </div>
               <div class="tech-block tech-red">
@@ -3280,7 +3240,7 @@
                 </div>
                 <div class="tech-text">
                   During the first round of combat, choose 1 ship in the active
-                  system to roll X extra combat dice, where X is the number of
+                  system to roll X amount of extra combat dice, where X is the number of
                   unique ship types your opponent has in the combat.
                 </div>
               </div>
@@ -3296,39 +3256,35 @@
                   <br /><br />
                   You may exhaust this card at the start of a combat you are
                   participating in to choose 2 other players' ships
-                  participating in this combat; those ships have -1 to their
-                  combat rolls until the end of combat.
+                  participating in this combat: Those ships apply -1 to their
+                  combat rolls until the end of that combat.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Strength</div>
                 <div class="ability-text">
-                  At the start of combat, choose 1 of your units. That unit
-                  gains SUSTAIN DAMAGE until the end of combat.
+                  At the start of combat, choose 1 of your participating units to
+                  gain SUSTAIN DAMAGE until the end of combat.
                   <br /><br />
-                  You may exhaust this card when another player's unit uses a
+                  You may exhaust this card when another player uses a
                   unit ability against your units to cancel up to 2 hits
-                  produced by that ability.
+                  produced by that unit ability.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Revelation</div>
                 <div class="ability-text">
-                  At the start of the strategy phase, choose 2 common decks.
-                  You may look at the top card of those decks at any time.
+                  At the start of the strategy phase, choose 2 common decks and place them on either side of this card. You may look at the top card of either of these decks at any time.
                   <br /><br />
-                  When you draw from 1 of those common decks, you may exhaust
-                  this card to draw 2 cards instead, keeping 1 and returning
-                  the other to the bottom of that deck.
+                  When you draw from either common deck placed near this card, you may exhaust this card to draw an additional card; choose 1 o keep or resolve and shuffle the rest back into that common deck.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Knowledge</div>
                 <div class="ability-text">
-                  When you research a non-unit upgrade technology, you may
+                  After you research a non-unit upgrade technology, you may
                   exhaust a planet that has a technology specialty to research
-                  another technology. That technology must match all of that
-                  planet's technology specialties for its requirements.
+                  a technology whose prerequisites match that planet's technology specialties.
                   <br /><br />
                   You may exhaust this card to ready any technology you own.
                 </div>
@@ -3337,7 +3293,7 @@
                 <div class="ability-name">Discovery</div>
                 <div class="ability-text">
                   When you resolve the effects of an exploration card, you may
-                  instead discard that card without resolving its effects to
+                  choose to discard that card without resolving its effects to
                   gain 1 trade good.
                   <br /><br />
                   You may exhaust this card to explore the frontier deck in a
@@ -3347,12 +3303,10 @@
               <div class="ability-block">
                 <div class="ability-name">Stability</div>
                 <div class="ability-text">
-                  During PRODUCTION, if you produce 3 or more non-fighter
-                  ships, you may produce an additional 2 fighters or infantry
-                  for free. These do not count against your production limit.
+                  When one of your units use PRODUCTION, if you produce 3 or more non-fighter ships: You may produce an additional 2 fighters or infantry at no cost. These units do not count against your production limit.
                   <br /><br />
-                  You may exhaust this card to use the production ability of 1
-                  of your space docks in a system that does not contain 1 of
+                  You may exhaust this card to use the PRODUCTION ability of 1
+                  of your space docks in a system that does not contain
                   your command tokens or another player's ships. If you do,
                   place a command token from your reinforcements into that
                   system.
@@ -3368,8 +3322,8 @@
                 The Interperator
               </div>
               <div class="ability-text">
-                At any time, you may exhaust this card to allow a player to
-                resolve the exhaust effect of 1 of your Doctrines in your
+                At any time: You may exhaust this card to allow a player to
+                resolve the exhaust effect of 1 doctrine in your
                 reinforcements.
               </div>
             </div>
@@ -3380,12 +3334,11 @@
               </div>
               <div class="ability-text">
                 <em>
-                  Unlock: Use the exhaust ability of both of your Doctrines in
-                  your play area during the action phase.
+                  Unlock: Have all of your doctrines in your play area exhausted.
                 </em>
                 <br /><br />
-                When any player scores a secret objective, you may either draw
-                a secret objective or gain 1 command token.
+                When a player scores a secret objective, you may draw
+                1 secret objective, or gain 1 command token.
               </div>
             </div>
             <div class="card hero-card">
@@ -3394,10 +3347,9 @@
                 The First Voice · The Grand Convocation - Awakening
               </div>
               <div class="ability-text">
-                ACTION: Place this card and all of your Doctrines near your
-                faction sheet. During this action phase, when you exhaust 1 of
-                your Doctrines, ready any other Doctrine. At the start of the
-                status phase, return all but 2 of your Doctrines to your
+                ACTION: Place this card and all of your doctrines in your play area. During this action phase, when you exhaust 1 of
+                your doctrines, ready 1 other doctrine. At the end of the
+                status phase, return all but 2 of your doctrines to your
                 reinforcements and purge this card.
               </div>
             </div>
@@ -3421,7 +3373,7 @@
               </div>
               <div class="unit-text" style="margin-top: 8px">
                 This unit gains +1 to its combat rolls for each exhausted
-                Doctrine in your play area.
+                doctrine in your play area.
               </div>
             </div>
             <div class="breakthrough-card">
@@ -3432,11 +3384,11 @@
                 <span style="color: green">Green</span></span
               >
               <div class="ability-text">
-                When you retreat, you may retreat to any system that contains 1
+                You may retreat to any system that contains one
                 of your command tokens and no other player's ships.
                 <br /><br />
                 You may exhaust this card at any time to resolve the exhaust
-                effect of 1 of your Doctrines in your reinforcements.
+                effect of 1 doctrine in your reinforcements.
               </div>
             </div>
             <div class="card">
