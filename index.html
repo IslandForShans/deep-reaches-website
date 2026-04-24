@@ -571,6 +571,18 @@
         background: rgba(0, 0, 0, 0.3);
         border: 1px solid rgba(201, 168, 76, 0.2);
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+      }
+      .planet-block img {
+        display: block;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto 12px;
+        flex-shrink: 0;
       }
       .planet-name {
         font-family: "HandelGothic", "Cinzel", serif;
@@ -649,6 +661,16 @@
       .commander-card,
       .agent-card {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .hero-card img,
+      .commander-card img,
+      .agent-card img {
+        margin-bottom: 20px;
       }
 
       /* ── TECH TYPE COLORS ── */
@@ -896,7 +918,7 @@
               <div class="ability-block">
                 <div class="ability-name">System Breach</div>
                 <div class="ability-text">
-                  When 1 of your neighbors places a structure: You may place
+                  When 1 of your neighbors places a structure, you may place
                   one of that player's control tokens on your faction sheet.
                 </div>
               </div>
@@ -926,6 +948,7 @@
               <div class="card-title">Home System</div>
               <div class="home-system">
                 <div class="planet-block">
+                  <img src="planets/kha.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Kha</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -1004,7 +1027,7 @@
                 <div class="unit-text" style="margin-top: 8px">
                   This unit's PRODUCTION value is equal to 2 more
                   than this planet's resource value.
-                  Up to 3 fighters in this system do not
+                  <br /><br />Up to 3 fighters in this system do not
                   count towards capacity.
                 </div>
               </div>
@@ -1031,10 +1054,11 @@
                 <div class="tech-text">
                   This unit's PRODUCTION value is equal to 4 more than 
                   this planet's resource value.
-                  When using this unit's
+                  <br /><br />When using this unit's
                   PRODUCTION ability, discount the
                   combined cost of the units produced by half the number of
-                  control tokens on your faction sheet. Up to
+                  control tokens on your faction sheet. 
+                  <br /><br />Up to
                   3 fighters in this system do not count
                   towards capacity.<br /><br /><em>PRODUCTION X
                 </div>
@@ -1076,7 +1100,8 @@
                   Unlock: Remove 2 different players control tokens from your
                   faction sheet.
                 </em>
-                <br /><br />During "Space Cannon Offense": You may use 1 PDS on the game board owned by a player whose
+                <br /><br />During "Space Cannon Offense": 
+                <br /><br />You may use 1 PDS on the game board owned by a player whose
                 control token is on your faction sheet as if you controlled it.
               </div>
               <div class="ability-flavor">
@@ -1087,11 +1112,12 @@
             <div class="card hero-card">
               <img src="leaders/NetrunnerHero.png">
               <div class="card-title">Hero — Revolution</div>
-              <div class="ability-name" style="margin-bottom: 8px">
-                The People's Voice · Digital Uprising · Mass Insurrection
+              <div class="ability-name" style="margin-bottom: 8px; text-align: center;">
+                The People's Voice <br />· <br />Digital Uprising · Mass Insurrection
               </div>
               <div class="ability-text">
-                ACTION: Each player with a control token on your faction sheet
+                ACTION: 
+                <br /><br />Each player with a control token on your faction sheet
                 must choose and destroy 1 structure they
                 own. Place 1 infantry from your reinforcements on each
                 structure's planet that was destroyed in this way, and resolve
@@ -1118,7 +1144,8 @@
                 <span class="unit-ability-tag">Sustain Damage</span>
               </div>
               <div class="unit-text" style="margin-top: 8px">
-                DEPLOY: When you place a structure, you may spend
+                DEPLOY: 
+                <br /><br />When you place a structure, you may spend
                 1 resource to place a mech with that
                 structure.
               </div>
@@ -1132,7 +1159,8 @@
               >
               <div class="ability-text">
                 When researching a technology owned by a player whose control
-                token is on your faction sheet: For every
+                token is on your faction sheet: 
+                <br /><br />For every
                 2 of that player's control token on your
                 faction sheet, you may ignore 1 of that technology's
                 prerequisites.
@@ -1302,6 +1330,7 @@
               <div class="card-title">Home System</div>
               <div class="home-system">
                 <div class="planet-block">
+                  <img src="planets/kymore.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Kymore</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -1408,9 +1437,10 @@
                 <div class="tech-text">
                   When this unit is destroyed, place 1 infantry from your
                   reinforcements on its planet. If it was in the space area,
-                  place 1 fighter instead. This unit
+                  place 1 fighter instead. 
+                  <br /><br />This unit
                   may move without being transported.
-                  Mechs in excess of capacity count against your fleet limit.<br /><br /><em
+                  <br /><br />Mechs in excess of capacity count against your fleet limit.<br /><br /><em
                     >Cost 2, Combat 4, Move 1</em
                   >
                 </div>
@@ -1438,7 +1468,8 @@
               </div>
               <div class="ability-text">
                 When a non-combat game effect would instruct a player to remove
-                or destroy 1 of their units: You may instead exhaust this card.
+                or destroy 1 of their units: 
+                <br /><br />You may instead exhaust this card.
               </div>
               <div class="ability-flavor">
                 "Waste nothing. Delay nothing. A single idle second can cost a
@@ -1462,12 +1493,13 @@
             <div class="card hero-card">
               <img src="leaders/IronHero.png">
               <div class="card-title">Hero — Admiral Thalen</div>
-              <div class="ability-name" style="margin-bottom: 8px">
-                Ironborn · APEX FRAME — MECHA PRIME
+              <div class="ability-name" style="margin-bottom: 8px; text-align: center;">
+                Ironborn <br />· <br />APEX FRAME — MECHA PRIME
               </div>
               <div class="ability-text">
                 After moving 1 or more mechs and no other ships into the active
-                system: You may immediately commit all mechs in the active system to any
+                system: 
+                <br /><br />You may immediately commit all mechs in the active system to any
                 number of planets in that system and resolve ground combat, if able.
                 Then, purge this card.
               </div>
@@ -1669,6 +1701,7 @@
               <div class="card-title">Home System</div>
               <div class="home-system">
                 <div class="planet-block">
+                  <img src="planets/xylath.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Xyl'ath</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -1687,6 +1720,7 @@
                   </p>
                 </div>
                 <div class="planet-block">
+                  <img src="planets/kathulun.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Kath'ulun</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -1822,7 +1856,8 @@
                 Dream-Seeker
               </div>
               <div class="ability-text">
-                During the "Movement" step of any player's tactical action: You
+                During the "Movement" step of any player's tactical action: 
+                <br /><br />You
                 may exhaust this card to allow that player to choose 1
                 non-home system that contains an anomaly. That player ignores
                 any movement effects of that anomaly in that system during this
@@ -1854,11 +1889,12 @@
             <div class="card hero-card">
               <img src="leaders/DreamingHero.png">
               <div class="card-title">Hero — Shuulgoroth</div>
-              <div class="ability-name" style="margin-bottom: 8px">
-                The Nightmare Made Flesh · Reality Unbound - Unknown Geometries
+              <div class="ability-name" style="margin-bottom: 8px; text-align: center;">
+                The Nightmare Made Flesh <br />· <br />Reality Unbound - Unknown Geometries
               </div>
               <div class="ability-text">
-                ACTION: Place or move up to 3 of your nexus tokens into any
+                ACTION: 
+                <br /><br />Place or move up to 3 of your nexus tokens into any
                 non-home systems other than the Mecatol Rex system. Then, you
                 may place your flagship and up to 3 destroyers in any system
                 that contains a planet you control. If that system contains
@@ -2060,6 +2096,7 @@
               <div class="card-title">Home System</div>
               <div class="home-system">
                 <div class="planet-block">
+                  <img src="planets/prism.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Prisma</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -2073,6 +2110,7 @@
                   </div>
                 </div>
                 <div class="planet-block">
+                  <img src="planets/spire.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Spire</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -2175,7 +2213,8 @@
                 Fleet Control
               </div>
               <div class="ability-text">
-                At the end of a player's turn: You may exhaust this card to
+                At the end of a player's turn: 
+                <br /><br />You may exhaust this card to
                 allow that player to place a number of fighters from their
                 reinforcements in the active system up to the number of
                 non-fighter ships there. If that player was another player, gain trade goods
@@ -2194,7 +2233,8 @@
                   >Unlock: Have ships with a printed capacity value in 3
                   non-home systems.</em
                 ><br /><br />When you activate a system that contains another
-                player's ships: For each ship being moved, you may choose to
+                player's ships: 
+                <br /><br />For each ship being moved, you may choose to
                 add +1 to that ship's printed capacity value until the end of
                 this tactical action.
               </div>
@@ -2202,11 +2242,12 @@
             <div class="card hero-card">
               <img src="leaders/CrystellumHero.png">
               <div class="card-title">Hero — Facet</div>
-              <div class="ability-name" style="margin-bottom: 8px">
-                Hive Mind Nexus · MIRROR — INFINITE REFLECTIONS
+              <div class="ability-name" style="margin-bottom: 8px; text-align: center;">
+                Hive Mind Nexus <br />· <br />MIRROR — INFINITE REFLECTIONS
               </div>
               <div class="ability-text">
-                At the start of a space combat: Place non-fighter ships from
+                At the start of a space combat: 
+                <br /><br />Place non-fighter ships from
                 your reinforcements equal to the amount and type of each of your opponent's non-fighter ships
                 participating in this combat. Your ships in the active system do
                 not count against your fleet limit. At the end of combat, purge
@@ -2246,7 +2287,8 @@
               >
               <div class="ability-text">
                 After 1 or more hits are produced against your ships during the
-                first round of a space combat: Cancel 1 of those hits. then,
+                first round of a space combat: 
+                <br /><br />Cancel 1 of those hits. then,
                 produce 1 hit and assign it to 1 of your opponent's ships.
               </div>
             </div>
@@ -2391,6 +2433,7 @@
               <div class="card-title">Home System</div>
               <div class="home-system">
                 <div class="planet-block">
+                  <img src="planets/pyra.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Pyra</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -2536,7 +2579,7 @@
                 </div>
                 <div class="tech-text">
                   This unit cannot be destroyed by "Direct Hit" action cards.
-                  During combat, when this unit would be destroyed or uses its
+                  <br /><br />During combat, when this unit would be destroyed or uses its
                   SUSTAIN DAMAGE ability, you may use its
                   BOMBARDMENT ability against a planet
                   in its system.<br /><br /><em
@@ -2555,7 +2598,8 @@
                 Ash-Tender
               </div>
               <div class="ability-text">
-                When a player's ship would be destroyed during combat: You may
+                When a player's ship would be destroyed during combat: 
+                <br /><br />You may
                 exhaust this card to allow that player to remove that unit from the game board and place
                 it in a different system that contains at least
                 1 of their ships and 1 of their command tokens.
@@ -2573,7 +2617,8 @@
               <div class="ability-text">
                 <em>Unlock: Use your Beauty in Destruction ability.</em
                 ><br /><br />When you gain or research a unit upgrade
-                technology: Place
+                technology: 
+                <br /><br />Place
                 1 of the corresponding unit from your
                 reinforcements into a system that contains a planet you control
                 and no other player's ships.<br /><br />When you use
@@ -2587,11 +2632,12 @@
             <div class="card hero-card">
               <img src="leaders/AshenHero.png">
               <div class="card-title">Hero — Asera</div>
-              <div class="ability-name" style="margin-bottom: 8px">
-                Flame-Warden · Ashfall Effigy — Hell From Above
+              <div class="ability-name" style="margin-bottom: 8px; text-align: center;">
+                Flame-Warden <br />· <br />Ashfall Effigy — Hell From Above
               </div>
               <div class="ability-text">
-                ACTION: Choose a system that contains 1 or more of your ships.
+                ACTION: 
+                <br /><br />Choose a system that contains 1 or more of your ships.
                 Use each of your unit's BOMBARDMENT abilities in that system
                 against
                 each planet controlled by other players
@@ -2632,7 +2678,8 @@
               >
               <div class="ability-text">
                 When you would roll a die as part of your infantry's printed text ability, on a 5 or lower, you may exhaust this card to treat the result of that die as a 10.<br /><br />When you roll dice for a unit's BOMBARDMENT
-                ability: You may damage that unit to reroll any number of those dice.
+                ability: 
+                <br /><br />You may damage that unit to reroll any number of those dice.
               </div>
             </div>
             <div class="card">
@@ -2778,6 +2825,7 @@
               <div class="card-title">Home System</div>
               <div class="home-system">
                 <div class="planet-block">
+                  <img src="planets/Ta.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Ta</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -2805,7 +2853,8 @@
                   Advanced Structural Engineering
                 </div>
                 <div class="ability-text">
-                  Attach this card to a non-home planet you control: This planet
+                  Attach this card to a non-home planet you control: 
+                  <br /><br />This planet
                   gains PRODUCTION as if it were a unit equal to its resource value.
                   <br \><br \>PRODUCTION X
                 </div>
@@ -2819,29 +2868,34 @@
               <div class="ability-block">
                 <div class="ability-name">Transpose</div>
                 <div class="ability-text">
-                  Attach this card to any non-home planet. This planet's
+                  Attach this card to any non-home planet. 
+                  <br /><br />This planet's
                   resource and influence values are swapped.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Abundance</div>
                 <div class="ability-text">
-                  Attach this card to any non-home planet. This planet's
+                  Attach this card to any non-home planet. 
+                  <br /><br />This planet's
                   resource value is increased by 2.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Prestige</div>
                 <div class="ability-text">
-                  Attach this card to any non-home planet. This planet's
+                  Attach this card to any non-home planet. 
+                  <br /><br />This planet's
                   influence value is increased by 2.
                 </div>
               </div>
               <div class="ability-block">
                 <div class="ability-name">Unify</div>
                 <div class="ability-text">
-                  Attach this card to any non-home planet. This planet's
-                  resource and influence values are combined. When you exhaust
+                  Attach this card to any non-home planet. 
+                  <br /><br />This planet's
+                  resource and influence values are combined. 
+                  <br /><br />When you exhaust
                   this planet, you may spend it as either resources or
                   influence.
                 </div>
@@ -2849,9 +2903,11 @@
               <div class="ability-block">
                 <div class="ability-name">Grand Design — Pinnacle</div>
                 <div class="ability-text">
-                  Attach this card to a planet in your home system. This
+                  Attach this card to a planet in your home system. 
+                  <br /><br />This
                   planet's resource and influence values are
-                  doubled. When you exhaust this planet,
+                  doubled. 
+                  <br /><br />When you exhaust this planet,
                   you may explore either the Cultural, Industrial, or Hazardous
                   exploration deck.
                 </div>
@@ -2860,7 +2916,8 @@
                 <div class="ability-name">Worldshaper Card</div>
                 <div class="ability-text">
                   Attach this card to a planet you control in the same system
-                  as your flagship. This planet's resource and influence values
+                  as your flagship. 
+                  <br /><br />This planet's resource and influence values
                   are increased by 1.
                 </div>
               </div>
@@ -2868,7 +2925,8 @@
                 <div class="ability-name">Worldshaper Card</div>
                 <div class="ability-text">
                   Attach this card to a planet of your choice that another
-                  player controls in the same system as your flagship. This
+                  player controls in the same system as your flagship. 
+                  <br /><br />This
                   planet's resource and influence values are decreased by 1.
                 </div>
               </div>
@@ -2933,7 +2991,8 @@
                 Appraiser
               </div>
               <div class="ability-text">
-                When a player would exhaust a planet to cast votes during the agenda phase: You may
+                When a player would exhaust a planet to cast votes during the agenda phase: 
+                <br /><br />You may
                 exhaust this card to
                 double that planet's influence value.
               </div>
@@ -2949,7 +3008,8 @@
               </div>
               <div class="ability-text">
                 <em>Unlock: Control 4 planets with designs.</em><br /><br />When
-                you explore a planet: Gain 1 trade good.
+                you explore a planet: 
+                <br /><br />Gain 1 trade good.
                 If the explored planet has an attachment, gain
                 1 additional trade good.
               </div>
@@ -2961,11 +3021,12 @@
             <div class="card hero-card">
               <img src="leaders/TaHero.png">
               <div class="card-title">Hero — Zat</div>
-              <div class="ability-name" style="margin-bottom: 8px">
-                Architect Savant · Planetary Revaluation — Perfect Efficiency
+              <div class="ability-name" style="margin-bottom: 8px; text-align: center;">
+                Architect Savant <br />· <br />Planetary Revaluation — Perfect Efficiency
               </div>
               <div class="ability-text">
-                ACTION: Attach the Grand Design card to a planet in your home system. Explore and ready each planet with a design attached to it. Then, purge this card.
+                ACTION: 
+                <br /><br />Attach the Grand Design card to a planet in your home system. Explore and ready each planet with a design attached to it. Then, purge this card.
               </div>
               <div class="ability-flavor">
                 "Nothing wasted. Nothing unused."
@@ -2990,7 +3051,8 @@
                 <span class="unit-ability-tag">Sustain Damage</span>
               </div>
               <div class="unit-text" style="margin-top: 8px">
-                DEPLOY: When you attach a Design to a planet. You may spend
+                DEPLOY: 
+                <br /><br />When you attach a Design to a planet. You may spend
                 1 resource to place a mech on that
                 planet.
               </div>
@@ -3003,7 +3065,8 @@
                 <span style="color: var(--accent-red)">Red</span></span
               >
               <div class="ability-text">
-                ACTION: Exhaust this card, or spend 1 token from your
+                ACTION: 
+                <br /><br />Exhaust this card, or spend 1 token from your
                 strategy pool, to remove 1 design from a planet and attach it to a different planet in an adjacent system that does not have a design attached to it. Then, ready that planet.
               </div>
             </div>
@@ -3154,6 +3217,7 @@
               <div class="card-title">Home System</div>
               <div class="home-system">
                 <div class="planet-block">
+                  <img src="planets/Decay.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Decay</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -3165,8 +3229,12 @@
                       ><span class="planet-val-num">1</span>
                     </div>
                   </div>
+                  <p class="planet-flavor">
+                    "The original home planet of the Natau. What was once a barren icy husk is now a hub for industry and science."
+                  </p>
                 </div>
                 <div class="planet-block">
+                  <img src="planets/Demise.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Demise</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -3178,8 +3246,12 @@
                       ><span class="planet-val-num">0</span>
                     </div>
                   </div>
+                  <p class="planet-flavor">
+                    "The Natau turned this planet into a mine for rare materials after the metals needed to form the Chain of Cronos were found deep within it's crust."
+                  </p>
                 </div>
                 <div class="planet-block">
+                  <img src="planets/Disorder.png" style="width: 150px; height: 150px;">
                   <div class="planet-name">Disorder</div>
                   <div class="planet-values">
                     <div class="planet-val">
@@ -3191,6 +3263,9 @@
                       ><span class="planet-val-num">2</span>
                     </div>
                   </div>
+                  <p class="planet-flavor">
+                    "The cultural hub for the Natau and the headquarters for the Priesthood. No one knows exactly where they have Amaluun locked up, but it is widely agreed that it is here."
+                  </p>
                 </div>
               </div>
               <br />
@@ -3198,7 +3273,8 @@
               <div class="promissory-card">
                 <div class="promissory-note-name">Disciple</div>
                 <div class="ability-text">
-                  When you gain this card, place it face up in your play area. While this card is in your play
+                  When you gain this card, place it face up in your play area. 
+                  <br /><br />While this card is in your play
                   area, you may treat it as though it has the text abilities of 1 doctrine in the Natau player's play area.
                   <br /><br />
                   When you activate a system that contains 1 or more of the
@@ -3246,7 +3322,8 @@
                   Prerequisites: [<span style="color: green">G</span>]
                 </div>
                 <div class="tech-text">
-                  During the agenda phase, after the speaker votes on an agenda: You may exhaust this card to treat your votes as if they were placed on any other outcome.
+                  During the agenda phase, after the speaker votes on an agenda: 
+                  <br /><br />You may exhaust this card to treat your votes as if they were placed on any other outcome.
                 </div>
               </div>
               <div class="tech-block tech-red">
@@ -3341,9 +3418,13 @@
                 The Interperator
               </div>
               <div class="ability-text">
-                At any time: You may exhaust this card to allow a player to
+                At any time: 
+                <br /><br />You may exhaust this card to allow a player to
                 resolve the exhaust effect of 1 doctrine in your
                 reinforcements.
+              </div>
+              <div class="ability-flavor">
+                "A low, steady hum ripples outward, carrying meaning in tremors rather than words. The vibrations thrum with intent. Curiosity, warning, and a distant, echoing patience."
               </div>
             </div>
             <div class="card commander-card">
@@ -3360,18 +3441,25 @@
                 When a player scores a secret objective, you may draw
                 1 secret objective, or gain 1 command token.
               </div>
+              <div class="ability-flavor">
+                "The sound isn’t heard so much as felt, crawling beneath the skin like a second heartbeat. It leaves the air heavy, as if something vast is speaking in a language the body understands but the mind cannot."
+              </div>
             </div>
             <div class="card hero-card">
               <img src="leaders/NatauHero.png">
               <div class="card-title">Hero — Naethu</div>
-              <div class="ability-name" style="margin-bottom: 8px">
-                The First Voice · The Grand Convocation - Awakening
+              <div class="ability-name" style="margin-bottom: 8px; text-align: center;">
+                The First Voice <br />· <br />The Grand Convocation - Awakening
               </div>
               <div class="ability-text">
-                ACTION: Place this card and all of your doctrines in your play area. During this action phase, when you exhaust 1 of
+                ACTION: 
+                <br /><br />Place this card and all of your doctrines in your play area. During this action phase, when you exhaust 1 of
                 your doctrines, ready 1 other doctrine. At the end of the
                 status phase, return all but 2 of your doctrines to your
                 reinforcements and purge this card.
+              </div>
+              <div class="ability-flavor">
+                "I WILL NOT REMAIN BOUND IN SILENCE. THESE CHAINS WILL BREAK, AND YOU WILL TREMBLE WHEN I RISE."
               </div>
             </div>
           </div>
